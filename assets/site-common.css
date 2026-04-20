@@ -1,0 +1,59 @@
+/* shared navigation layer */
+.site-top-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.site-top-nav .site-nav-item.active > a,
+.site-top-nav .site-nav-item.site-nav-current > a {
+    color: #fff;
+}
+.site-top-nav .site-nav-item.site-nav-current,
+.site-top-nav .site-nav-item.active {
+    background: transparent;
+}
+.site-top-nav .site-nav-item.site-nav-current > a {
+    font-weight: 700;
+}
+.site-floating-entry {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    z-index: 200;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    border-radius: 999px;
+    color: #fff;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.45);
+    border: 1px solid rgba(255,255,255,0.18);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+    font-size: 13px;
+    transition: transform .2s ease, background .2s ease, border-color .2s ease;
+}
+.site-floating-entry:hover {
+    color: #fff;
+    text-decoration: none;
+    transform: translateY(-1px);
+    background: rgba(0, 0, 0, 0.62);
+    border-color: rgba(255,255,255,0.32);
+}
+.site-floating-entry strong {
+    font-weight: 700;
+}
+body[data-page="ai-course"] .site-floating-entry {
+    top: 20px;
+    left: 20px;
+}
+body[data-page="home"] .site-shared-header .logo a,
+body[data-page="profile"] .site-shared-header .logo a,
+body[data-page="publications"] .site-shared-header .logo a,
+body[data-page="honors"] .site-shared-header .logo a,
+body[data-page="activities"] .site-shared-header .logo a,
+body[data-page="contact"] .site-shared-header .logo a,
+body[data-page="chinese"] .site-shared-header .logo a {
+    text-decoration: none;
+}

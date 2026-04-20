@@ -1,1486 +1,291 @@
 <!DOCTYPE html>
-<!-- saved from url=(0037)https://rmcong.github.io/Profile.html -->
-<html class="csstransforms csstransforms3d csstransitions">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>MVP Group</title>
-		<link href="./files/bootstrap.css" rel="stylesheet" type="text/css" media="all">
-		<link href="./files/style.css" rel="stylesheet" type="text/css" media="all">
-		<link href="./files/prettyPhoto.css" rel="stylesheet" type="text/css" media="all">		
-		<link href="./files/css" rel="stylesheet" type="text/css">	
-		<script charset="utf-8" src="chrome-extension://jgphnjokjhjlcnnajmfjlacjnjkhleah/js/btype.js"></script>
-		<script type="text/javascript" charset="utf-8" src="chrome-extension://jgphnjokjhjlcnnajmfjlacjnjkhleah/js/chrome.js"></script>
-		<script type="text/javascript" src="chrome-extension://aadgmnobpdmgmigaicncghmmoeflnamj/ng-inspector.js"></script>
-		<style>
-			.people-photo {
-				border-radius: 50%;
-				height:200px!important;
-				width:200px!important;
-				box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-				margin-bottom: 20px;
-			}
-			.thumbnail-mvp{
-				padding: 4px;
-				margin-bottom: 20px;
-				line-height: 1.42857143;
-				text-align: center
-			}
-			.thumbnail-people{
-				padding: 4px;
-				margin-bottom: 20px;
-				height: 340px;
-				line-height: 1.42857143;
-				text-align: center
-			}
-			.container{
-				font-family: Palatino Linotype, Helvetica Neue, Helvetica, Arial, sans-serif;
-			}
-			
+<html lang="zh-CN">
+<head>
+    <title>视界无限、智创未来</title>
+    <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content=""/>
+    <!-- //Custom Theme files -->
+    <link href="./files/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./20220420/style.css" rel="stylesheet" type="text/css" media="all">
+    <!-- <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="all"> -->
+    <link rel="stylesheet" href="css/lightbox.css">
+    <!-- js -->
+    <script type="text/javascript" src="./files/jquery.min.js.下载"></script defer>
+    <script type="text/javascript" src="./files/bootstrap.js.下载"></script defer>
+    <script type="text/javascript" src="./files/jquery.banner.js.下载"></script defer>
+    <script type="text/javascript" src="./files/jquery.prettyPhoto.js.下载"></script defer>		
+    <script type="text/javascript" src="./files/jquery.isotope.js.下载"></script defer>	
+    <script type="application/x-javascript"> addEventListener("load", function () {
+    setTimeout(hideURLbar, 0);
+    }, false);
 
-			.academicegree{
-				font-size: 2.28rem;
-				/* line-height: 110%; */
-				margin: 1.14rem 0 0.912rem 0;
-			}
-			.row:nth-child(2n){
-				background:whitesmoke;
-			}
-			.row {
-				margin-bottom: 50px;
-			}
-			.people-topic {
-				font-style: italic;
-				color: #1a237e;
-			}
-			/* Alumni Scroll Styles */
-			.alumni-scroll-container {
-				width: 100%;
-				overflow: hidden;
-				background: #f5f5f5;
-				padding: 30px 0;
-				margin: 20px 0;
-			}
-			/* 修改滚动速度：scroll-left xxxs linear infinite */
-			.alumni-scroll-wrapper {
-				display: flex;
-				animation: scroll-left 60s linear infinite;
-				width: fit-content;
-			}
-			
-			.alumni-scroll-wrapper:hover {
-				animation-play-state: paused;
-			}
-			/* 滚动图片间距 */
-			.alumni-item {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				justify-content: center;
-				min-width: 150px;
-				margin: 0 20px;
-				text-align: center;
-				cursor: pointer;
-				transition: transform 0.3s ease;
-			}
-			
-			.alumni-item:hover {
-				transform: scale(1.1);
-			}
-			/* 滚动图片大小 */
-			.alumni-item img {
-				width: 150px;
-				height: 150px;
-				border-radius: 50%;
-				object-fit: fill;
-				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-				margin-bottom: 10px;
-			}
-			
-			.alumni-item-name {
-				font-size: 14px;
-				font-weight: bold;
-				color: #333;
-				margin-bottom: 5px;
-			}
-			
-			.alumni-item-info {
-				font-size: 12px;
-				color: #666;
-			}
-			
-			@keyframes scroll-left {
-				0% {
-					transform: translateX(0);
-				}
-				100% {
-					transform: translateX(-50%);
-				}
-			}
-			/* Activities Scroll Styles */
-			.activities-scroll-container {
-				width: 100%;
-				overflow: hidden;
-				background: #f5f5f5;
-				padding: 30px 0;
-				margin: 20px 0;
-			}
-			
-			.activities-scroll-wrapper {
-				display: flex;
-				animation: scroll-left 40s linear infinite;
-				width: fit-content;
-			}
-			
-			.activities-scroll-wrapper:hover {
-				animation-play-state: paused;
-			}
-			
-			.activities-item {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				justify-content: center;
-				min-width: 300px;
-				margin: 0 20px;
-				text-align: center;
-				cursor: pointer;
-				transition: transform 0.3s ease;
-			}
-			
-			.activities-item:hover {
-				transform: scale(1.05);
-			}
-			
-			.activities-item img {
-				width: 300px;
-				height: 225px;
-				border-radius: 8px;
-				object-fit: cover;
-				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-				margin-bottom: 10px;
-			}
-			
-			.activities-item-title {
-				font-size: 14px;
-				font-weight: bold;
-				color: #333;
-			}
-			/* Photos Scroll Styles */
-			.photos-scroll-container {
-				width: 100%;
-				overflow: hidden;
-				background: #f5f5f5;
-				padding: 30px 0;
-				margin: 20px 0;
-			}
-			
-			.photos-scroll-wrapper {
-				display: flex;
-				animation: scroll-left 40s linear infinite;
-				width: fit-content;
-				margin-left: 50px;
-				margin-right: 50px;
-			}
-			
-			.photos-scroll-wrapper:hover {
-				animation-play-state: paused;
-			}
-			
-			.photos-item {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				justify-content: center;
-				min-width: 300px;
-				margin: 0 20px;
-				text-align: center;
-				cursor: pointer;
-				transition: transform 0.3s ease;
-			}
-			
-			.photos-item:hover {
-				transform: scale(1.05);
-			}
-			
-			.photos-item img {
-				width: 300px;
-				height: 225px;
-				border-radius: 8px;
-				object-fit: cover;
-				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-				margin-bottom: 10px;
-			}
-			
-			.photos-item-title {
-				font-size: 14px;
-				font-weight: bold;
-				color: #333;
-			}
-		</style>
-		<script> 
-			var lastname = 'Me';
-			function func(name){
-				var div = document.getElementById(name); 
-				div.className = 'active'; 
-				div = document.getElementById(lastname); 
-				div.className = ''; 
-				lastname = name;
-			}
-			function coming_soon()
-			{
-				alert("Coming soon.");
-			}
-		</script>
-		<!-- Auto Scroll Speed Manager -->
-		<script src="./javascripts/auto-scroll-speed.js"></script> 
-	
-	</head>
-	<body>
-	<!---start-wrap--->
-		<!---start-header--->
-		<div class="header">
-			<div class="wrap">
-				<!---start-logo--->
-				<div class="logo">
-					<a href="https://rmcong.github.io/index.html">Runmin Cong</a>
-				</div>
-				<!---End-logo--->
-				<!---start-top-nav--->
-				<div class="top-nav">
-					<ul>
-						<li id="Home" onclick="func(&#39;Me&#39;)"><a href="https://rmcong.github.io/index.html" class="scroll">Home</a></li>
-						<li id="Profile" onclick="func(&#39;Profile&#39;)"><a href="https://rmcong.github.io/Profile.html" class="scroll">Profile</a></li>
-						<li id="Publications" onclick="func(&#39;Publications&#39;)"><a href="https://rmcong.github.io/Publication.html" class="scroll">Publications</a></li>
-						<!---<li id="Profile-chinese" onclick="func(&#39;Honors Awards&#39;)"><a href="https://rmcong.github.io/Honors%20Awards.html" class="scroll">Honors &amp; Awards</a></li>--->
-						<li id="AICourse" onclick="func(&#39;AI COURSE&#39;)"><a href="https://rmcong.github.io/AI_COURSE.html" class="scroll">AI COURSE</a></li>
-						<li id="MVPLab" onclick="func(&#39;MVP Lab&#39;)"><a href="https://rmcong.github.io/MVPLab.html" class="scroll">MVP Group</a></li>
-											<!--<li id="Projects" onclick="func(&#39;Projects&#39;)"><a href="./Project.html" class="scroll">Projects</a></li>-->
-						<!-- <li id="Art" onclick="func(&#39;Art&#39;)"><a href="http://www.icst.pku.edu.cn/struct/people/yangs/index.html#art" class="scroll">Art Gallery</a></li>	-->
-						<li id="Profile-chinese" onclick="func(&#39;Profile-chinese&#39;)"><a href="https://rmcong.github.io/Profile-chinese.html" class="scroll">中文简介</a></li>
-						<li id="Contact" onclick="func(&#39;Contact&#39;)"><a href="https://rmcong.github.io/Contact.html" class="scroll">Contact</a></li>
-					</ul>
-				</div>
-				<div class="clear"> </div>
-				<!---End-top-nav--->
-			 </div>
-		</div>
-		<div class="container" style="margin-top: 150px;">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="thumbnail-mvp">
-						<a href="#">
-							<img src="./MVPLab/logo-new2.png">
-						</a>
-						</br>
-					</br>
-						<div class="caption">
-							<!---<h4><b>INTRODUCTION</b></h4>--->
-							<p style="margin-top:10px">
-							The <strong>M</strong>ultimedia and <strong>V</strong>ision <strong>P</strong>rocessing Group (MVP Group) was established in July 2019, 
-								and the director is Prof. Runmin Cong. There are more than 50 graduate students and undergraduate interns, mainly engaged in multimedia
-								understanding, vision processing and other related research fields.
-							</p>
-						</div>
-					</div>
-				</div>
-		    </div>
-			<div class="row">
-				<div class="col-md-12 academicegree">
-					<h4 class="text-center  black-text">Faculty</h4>
-				</div>
-				<div class="col-md-12">
-					<div class="thumbnail-people">
-						<a href="#">
-							<img src="./sub_img/2026.png" class="people-photo">
-						</a>
-						<div class="caption">
-							<h3><b><a href="https://rmcong.github.io/index.html"  target="_blank"><font color="#1C86EE">Runmin Cong (丛润民)</font></a></b></h3>
-							<p>Professor, Director</p>
-							<p>国家级青年人才、山东省泰山学者青年专家</p>
-							<p class="people-topic">Embodied Perception and Learning</p>
-						</div>
-					</div>
-				</div>
-				<!--<div class="col-md-4">
-					<div class="thumbnail-people">
-						<a href="#">
-							<img src="./MVPLab/zc3.png" class="people-photo">
-						</a>
-						<div class="caption">
-							<h3><b><a href="https://zhangcong.site"  target="_blank"><font color="#1C86EE">Cong Zhang (张聪)</font></a></b></h3>
-							<p>Professor</p>
-							<p>国家级青年人才</p>
-							<p class="people-topic">Low-altitude Intelligence</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="thumbnail-people">
-						<a href="#">
-							<img src="./MVPLab/hwc2.png" class="people-photo">
-						</a>
-						<div class="caption">
-							<h3><b><a href="https://wencheng256.github.io/"  target="_blank"><font color="#1C86EE">Wencheng Han (韩文程)</font></a></b></h3>
-							<p>Professor</p>
-							<p>国家级青年人才</p>
-							<p class="people-topic">Intelligent Unmanned Ariving System</p>
-						</div>
-					</div>
-				</div>-->
-			</div>
-	                      <div class="row">
-				<div class="col-md-12 academicegree">
-					<h4 class="text-center  black-text">Academic Advisors</h4>
-				</div>
-				<div class="col-md-6">
-					<div class="thumbnail-people">
-						<a href="#">
-							<img src="./MVPLab/zw.png" class="people-photo">
-						</a>
-						<div class="caption">
-							<h3><b><a href="http://www.vsislab.com"  target="_blank"><font color="#1C86EE">Wei Zhang (张伟)</font></a></b></h3>
-							<p>Professor@SDU</p>
-							<p>长江学者特聘教授、控制学院副院长</p>
-							<p class="people-topic">Machine Intelligence and System Control</p>
-						</div>
-					</div>
-				</div>
-				<!--<div class="col-md-4">
-					<div class="thumbnail-people">
-						<a href="#">
-							<img src="./MVPLab/zy.jpg" class="people-photo">
-						</a>
-						<div class="caption">
-							<h3><b><a href="http://mepro.bjtu.edu.cn/index.html"  target="_blank"><font color="#1C86EE">Yao Zhao (赵耀)</font></a></b></h3>
-							<p>Professor@BJTU</p>
-							<p>IEEE Fellow、长江学者特聘教授、国家杰青</p>
-							<p class="people-topic">Multimedia Computing and Perception</p>
-						</div>
-					</div>
-				</div>-->
-				<div class="col-md-6">
-					<div class="thumbnail-people">
-						<a href="#">
-							<img src="./MVPLab/sam-new.jpeg" class="people-photo">
-						</a>
-						<div class="caption">
-							<h3><b><a href="https://scholars.ln.edu.hk/en/persons/sam-tak-wu-kwong/"  target="_blank"><font color="#1C86EE">Sam Kwong (邝得互)</font></a></b></h3>
-							<p>Associate Vice-President & Chair Professor@LU</p>
-							<p>加拿大工程院/香港工程院/美国国家发明家科学院院士、IEEE Fellow</p>
-							<p class="people-topic">Video Coding and Analysis</p>
-						</div>
-					</div>
-				</div>
-		    </div>
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+    <script>
+        // const cof = 880 / 1792;
+        const cof = 720 / 1280;
+        adaptiveHeight = function() {
+            const width = window.innerWidth;
+            const img = document.getElementById('cover');
+            img.style.minHeight = (cof * width).toString() + "px";
+        };
 
-	<!-- ------------------博士研究生--------------------- -->
-			<div class="row">
-				<div class="col-md-12 academicegree">
-					<h4 class="text-center  black-text">Postdoc&PhD Students</h4>
-				</div>
-				<div class="col-md-6">
-					<div class="thumbnail-people">
-						<a href="#">
-							<img src="./MVPLab/wb.jpg" class="people-photo">
-						</a>
-						<div class="caption">
-							<h3><b>Bin Wan</b> (万斌)</h3>
-							<p>Postdoc@SDU, 2025 - present</p>
-							<p class="people-topic">Computer Vision</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="thumbnail-people">
-						<a href="#">
-							<img src="./MVPLab/dzh.png" class="people-photo">
-						</a>
-						<div class="caption">
-							<h3><b>Zihao Dong</b> (董子昊)</h3>
-							<p>Postdoc@SDU, 2025 - present</p>
-							<p class="people-topic">Vision and Language Navigation</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="thumbnail-people">
-						<a href="#">
-							<img src="./MVPLab/xys.jpg" class="people-photo">
-						</a>
-						<div class="caption">
-							<h3><b>Yinsong Xu</b> (许银嵩)</h3>
-							<p>co-supervised with Prof. Sam Kwong</p>	
-							<p>PhD@CityU, 2021 - present</p>
-							<p class="people-topic">Internet of Things</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="thumbnail-people">
-						<a href="#">
-							<img src="./MVPLab/fh.jpeg" class="people-photo">
-						</a>
-						<div class="caption"> 
-							<h3><b><a href="https://fanghaook.github.io/"  target="_blank"><font color="#1C86EE">Hao Fang (方豪)</font></a></b></h3>
-							<p>PhD@SDU, 2024 - present</p>
-							<p class="people-topic">Scene Understanding and AI Security</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="thumbnail-people">
-						<a href="#">
-							<img src="./MVPLab/zchen.png" class="people-photo">
-						</a>
-						<div class="caption">
-							<h3><b><a href="https://zhangchen98.github.io"  target="_blank"><font color="#1C86EE">Chen Zhang (张晨)</font></a></b></h3>	
-							<p>PhD@SDU, 2025 - present</p>
-							<p class="people-topic">UAV Perception and Decision-making</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="thumbnail-people">
-						<a href="#">
-							<img src="./MVPLab/xr.jpg" class="people-photo">
-						</a>
-						<div class="caption">
-							<h3><b>Rui Xing</b> (邢瑞)</h3>	
-							<p>PhD@SDU, 2025 - present</p>
-							<p class="people-topic">AI+X & Reinforcement Learning</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="thumbnail-people">
-						<a href="#">
-							<img src="./MVPLab/xk.png" class="people-photo">
-						</a>
-						<div class="caption">
-							<h3><b>Kai Xie</b> (谢凯)</h3>	
-							<p>PhD Candidate@SDU, 2026 - present</p>
-							<p class="people-topic">3D Vision</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="thumbnail-people">
-						<a href="#">
-							<img src="./MVPLab/zzl.png" class="people-photo">
-						</a>
-						<div class="caption">
-							<h3><b>Zilong Zhao</b> (赵子龙)</h3>	
-							<p>PhD Candidate@SDU, 2026 - present</p>
-							<p class="people-topic">Autonomous Driving</p>
-						</div>
-					</div>
-				</div>
-		    </div>
-	<!-- ------------------硕士研究生--------------------- -->
-		    <div class="row">
-				<div class="col-md-12 academicegree">
-					<h4 class="text-center  black-text">MS Students</h4>
-				</div>
+        // adaptiveHeight();
+        // console.log("add resize");
+        window.addEventListener("load", function () {
+            adaptiveHeight();
+        })
+        window.addEventListener("resize", function () {
+            adaptiveHeight();
+        })
+    </script>
 
-			    <div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/shy.jpeg" class="people-photo">
-						<div class="caption">
-							<h3><b>Haoyan Sun</b> (孙豪言)</h3>
-							<p>MS@SDU, 2023 - present</p>
-							<p class="people-topic">Generalized Few-shot Segmentation</p>
-						</div>
-					</div>
-				</div>
+    <link href="./assets/site-common.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body data-page="home">
+<a class="site-floating-entry" href="./index.html"><strong>Navigation</strong><span>Home</span></a>
 
-			    <div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/czy2.png" class="people-photo">
-						<div class="caption">
-							<h3><b>Zhiyang Chen</b> (陈志杨)</h3>
-							<p>MS@SDU, 2024 - present</p>
-							<p class="people-topic">Constrained Environment Perception</p>
-						</div>
-					</div>
-				</div>
-			    <div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/fb2.png" class="people-photo">
-						<div class="caption">
-							<h3><b>Bo Fan</b> (范博)</h3>
-							<p>MS@SDU, 2025 - present</p>
-							<p class="people-topic">Continual Learning</p>
-						</div>
-					</div>
-				</div>
-			   <div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/jbw.jpg" class="people-photo">
-						<div class="caption">
-							<h3><b>Bowei Jin</b> (金博威)</h3>
-							<p>MS@SDU, 2025 - present</p>
-							<p class="people-topic">UAV Perception and Decision-making</p>
-						</div>
-					</div>
-				</div>
-              	<div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/wap1.jpg" class="people-photo">
-						<div class="caption">
-							<h3><b><a href="https://rawwap.github.io/"  target="_blank"><font color="#1C86EE">Anpeng Wang (王安鹏)</font></a></b></h3>
-							<p>MS@SDU, 2026 - present</p>
-							<p class="people-topic">Few-shot Learning</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/ck.jpg" class="people-photo">
-						<div class="caption">
-							<h3><b>Kun Chen</b> (陈琨)</h3>
-							<p>MS@SDU, 2026 - present</p>
-							<p class="people-topic">Constrained Environment Perception</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/lt.jpg" class="people-photo">
-						<div class="caption">
-							<h3><b>Tian Liu</b> (刘天)</h3>
-							<p>MS@SDU, 2026 - present</p>
-							<p class="people-topic">Adversarial Attack</p>
-						</div>
-					</div>
-				</div>
+<div class="body-content">
+<div class="banner background cover" id="cover">
+</div>
+<script>
+    // const cof = 880 / 1792;
+    const width = window.innerWidth;
+    const img = document.getElementById('cover');
 
-		   </div>
+    img.style.minHeight = (cof * width).toString() + "px";
+    img.style.background = "url(./20220420/team.png) no-repeat center 0px";
+    img.style.backgroundSize = "cover";
+</script>
 
-	<!-- ------------------本科实习生--------------------- -->
-		    <div class="row">
-				<div class="col-md-12 academicegree">
-					<h4 class="text-center  black-text">Undergraduate Interns</h4>
-				</div>
+<!--Main content-->
+<div class="container" id="team" style="overflow: hidden;">
+    <div class="row">
+        <div class="col-md-12" style="margin-bottom: 20px">
+            <div class="container-right">
+                <h3 class="title" style="color: #464444;">团队简介</h3>
+                <div style="font-size: 16px;">
+                    <p>
+                    “视界无限、智创未来”创新创业指导教师团队包括负责人1名，成员5名，均为85后、90后的计算机学院青年教师，是一直活力十足、勇于创新、敢于突破、乐于培养的年轻但实力雄厚的团队，
+                        团队主要研究方向涉及人工智能、无人驾驶、计算机视觉、多媒体处理、语音信号处理、机器学习等。近三年，团队指导大创项目13项，其中国家级结题7项、北京市级结题4项。
+                        团队未来将坚持以学生为中心，以培养“有理想、敢探索、求创新”的新时代创新型大学生为目标，调动本科生的科研积极性，挖掘本科生的创新潜力，培育一批上水平创新创业教育成果。
+                        团队未来将以“视界无限、智创未来”为主题，开展“智能+”的探索和应用，同时也会为参与的本科生提供场地、设备和资金支持。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12" style="margin-bottom: 20px">
+            <h3 class="title" style="color: #464444;">团队成员</h3>
+            <div class="groupMember">
+                <div class="row" >
+                    <div class="col-md-4">
+                        <div class="thumbnail-people">
+                            <a href="#">
+                                <img src="./20220420/crm.jpg" class="people-photo" loading="lazy" decoding="async">
+                            </a>
+                            <div class="caption text-center">
+                                <h4><b><a href="https://rmcong.github.io/index.html" target="_blank" rel="noopener noreferrer"><font color="#1C86EE">丛润民</font></a></b><span> (团队负责人)</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail-people">
+                            <a href="#">
+                                <img src="./20220420/qy.jpg" class="people-photo" loading="lazy" decoding="async">
+                            </a>
+                            <div class="caption text-center">
+                                <h4><b><a href="http://faculty.bjtu.edu.cn/9583/" target="_blank" rel="noopener noreferrer"><font color="#1C86EE">秦颖</font></a></b></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail-people">
+                            <a href="#">
+                                <img src="./20220420/ly.jpg" class="people-photo" loading="lazy" decoding="async">
+                            </a>
+                            <div class="caption text-center">
+                                <h4><b><a href="http://faculty.bjtu.edu.cn/9544/" target="_blank" rel="noopener noreferrer"><font color="#1C86EE">陆杨</font></a></b></h4>
+                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" >
+                    <div class="col-md-4">
+                        <div class="thumbnail-people">
+                            <a href="#">
+                                <img src="./20220420/cny.jpg" class="people-photo" loading="lazy" decoding="async">
+                            </a>
+                            <div class="caption text-center">
+                                <h4><b><a href="http://faculty.bjtu.edu.cn/9210/" target="_blank" rel="noopener noreferrer"><font color="#1C86EE">陈乃月</font></a></b></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail-people">
+                            <a href="#">
+                                <img src="./20220420/cyzh.jpg" class="people-photo" loading="lazy" decoding="async">
+                            </a>
+                            <div class="caption text-center">
+                                <h4><b><a href="http://faculty.bjtu.edu.cn/9505/" target="_blank" rel="noopener noreferrer"><font color="#1C86EE">曹原周汉</font></a></b></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail-people">
+                            <a href="#">
+                                <img src="./20220420/hxw.jpg" class="people-photo" loading="lazy" decoding="async">
+                            </a>
+                            <div class="caption text-center">
+                                <h4><b><a href="http://faculty.bjtu.edu.cn/9545/" target="_blank" rel="noopener noreferrer"><font color="#1C86EE">黄晓雯</font></a></b></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ 
+        </div>
 
-			    <div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/pks.jpg" class="people-photo">
-						<div class="caption">
-							<h3><b><a href="https://kaishengpang.github.io/"  target="_blank"><font color="#1C86EE">Kaisheng Pang (庞开升)</font></a></b></h3>
-							<p>UI@SDU, 2024/10 - present</p>
-							<p class="people-topic">Low-Light Face Super-resolution</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/wxp3.png" class="people-photo">
-						<div class="caption">
-							<h3><b>Xipeng Wang</b> (王熙彭)</h3>
-							<p>UI@SDU, 2025/10 - present</p>
-							<p class="people-topic">Continual Learning in Medical</p>
-						</div>
-					</div>
-				</div>
+        <div class="col-md-12" style="margin-bottom: 20px">
+            <h3 class="title"  style="color: #464444;">最新消息</h3>
+            <div class="center-row" style="font-size: 16px;">
+                <ul class="news-list">
+                    <li>
+                        <span>
+                            2021年度大创项目评级公布，团队指导的项目获4项国家级、1项北京市级和1项校级！祝贺各位同学！
+                        </span>
+                         </li>
+                        <li>
+                        <span>
+                            2021年度大创项目中期答辩等级公布，团队指导的项目获3项国家级、2项北京市级和1项校级！祝贺各位同学！
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
 
-			    <div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/fyc.jpg" class="people-photo">
-						<div class="caption">
-							<h3><b>Youcheng Fan</b> (樊宥成)</h3>
-							<p>UI@SDU, 2025/03 - present</p>
-							<p class="people-topic">Medical Adversarial Attack</p>
-						</div>
-					</div>
-				</div>
-			    <div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/xq.jpg" class="people-photo">
-						<div class="caption">
-							<h3><b>Qian Xu</b> (徐芊)</h3>
-							<p>UI@SDU, 2025/03 - present</p>
-							<p class="people-topic">Few-Shot Defect Detection</p>
-						</div>
-					</div>
-				</div>
-			   
-			    <div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/llz.jpg" class="people-photo">
-						<div class="caption">
-							<h3><b>Linze Li</b> (李林泽)</h3>
-							<p>UI@SDU, 2025/03 - present</p>
-							<p class="people-topic">Image Enhancement for Mural</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/lmz.jpg" class="people-photo">
-						<div class="caption">
-							<h3><b>Mingzu Liu</b> (刘明祖)</h3>
-							<p>UI@SDU, 2025/09 - present</p>
-							<p class="people-topic">LLM Security</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/lyj.jpg" class="people-photo">
-						<div class="caption">
-							<h3><b>Yongjia Luo</b> (罗永佳)</h3>
-							<p>UI@SDU, 2025/09 - present</p>
-							<p class="people-topic">VLN for UAV</p>
-						</div>
-					</div>
-				</div>
+        <div class="col-md-12" style="margin-bottom: 20px">
+            <h3 class="title"  style="color: #464444;">团队成果</h3>
+            <div class="contents">
+                <button class="btn news-btn" data-toggle="collapse" data-target="#collapseTwo">
+                    <span>
+                        2021年度大创项目指导成果速览：4项国家级、1项北京市级
+                    </span> 
+                </button>
+                <div id="collapseTwo" class="collapse">
+                    <div class="container-right">
+                        <div class="center-row" style="font-size: 16px;width: 90%;">
+                            <ul class="news-list">
+                                <li>
+                                    <span>
+                                        面向无人驾驶环境的车道线检测技术研究，成员：杨云帆、许铮睿、贺雨潇，指导老师：丛润民，【国家级】
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        基于深度学习的伪装目标检测研究，成员：朱雨琦、宗逸静、胡越洋，指导老师：丛润民，【国家级】
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        基于深度学习的玻璃物体检测研究，成员：刘青明、王凯、蒋楷文，指导老师：丛润民，【国家级】
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        图像/视频自动抠图技术研究，成员：王凯、刘青明、蒋楷文，指导老师：丛润民，【国家级】
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        面向水下图像的显著性目标检测研究，成员：陈幸子、潘雪菲、李诚，指导老师：丛润民，【北京市级】
+                                    </span>
+                                </li>
+                                
+                                
+                            </ul>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+            <div class="contents">
+                <button class="btn news-btn" data-toggle="collapse" data-target="#collapseOne">
+                    <span>
+                        2020年度大创项目指导成果速览：3项国家级、3项北京市级
+                    </span> 
+                </button>
+                <div id="collapseOne" class="collapse">
+                    <div class="container-right">
+                        <div class="center-row" style="font-size: 16px;width: 90%;">
+                            <ul class="news-list">
+                                <li>
+                                    <span>
+                                        结合物理模型和深度学习的水下图像增强方法，成员：李坤、杨世杰、余澄昊，指导老师：丛润民，【国家级】
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        基于深度学习的RGB-D图像显著性目标检测，成员：文楷昂、关雨晨、刘子贺，指导老师：丛润民，【国家级】
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        基于深度学习的COVID-19肺部感染图像分割，成员：李若辰、张雪祺、陈泽文，指导老师：丛润民，【国家级】
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        快速水下图像质量评价系统设计，成员：钟启航、林秦伟、赵路路，指导老师：丛润民，【北京市级】
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        基于视觉推理的光学遥感图像显著性目标提取系统开发，成员：刘璇、陶榆君、赵少帅，指导老师：丛润民，【北京市级】
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        基于跨模态融合的有参考图像分割，成员：赵重阳、张宜千、南京，指导老师：丛润民，【北京市级】
+                                    </span>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-				<div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/czj.jpg" class="people-photo">
-						<div class="caption">
-							<h3><b>Zhijian Chen</b> (陈致简)</h3>
-							<p>UI@SDU, 2025/11 - present</p>
-							<p class="people-topic">UAV Path Planning</p>
-						</div>
-					</div>
-				</div>
+    <!--//map-->
+    <!--footer-->
+<div class="footer">
+    <div class="container">
+        <div class="col-md-4 col-md-offset-4">
+           <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=tt&d=cGk6JvvJ36uqGZtgCEwUj1cwf5Uk82fcq9C0ZJJCqGA&co=2d78ad&cmo=3acc3a&cmn=ff5353&ct=ffffff'></script defer>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-md-6 col-md-offset-3">
+            <p>Copyright &copy; 2021.DC BJTU All rights reserved. </p>
+        </div>
+    </div>
+    <!--//footer-->
+    <!--banner Slider starts Here-->
+    </script>
+    <!--//End-slider-script-->
+    <!-- start-smooth-scrolling-->
+    <!--//smooth-scrolling-of-move-up-->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+</div>
 
-				<div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/cxj.jpg" class="people-photo">
-						<div class="caption">
-							<h3><b>Xuanjun Chen</b> (陈炫均)</h3>
-							<p>UI@SDU, 2025/11 - present</p>
-							<p class="people-topic">UAV Reasoning</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/ctq.jpg" class="people-photo">
-						<div class="caption">
-							<h3><b>Tianqi Chen</b> (陈天琦)</h3>
-							<p>UI@SDU, 2026/04 - present</p>
-							<p class="people-topic">Point Cloud Segmentation</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/gmx.jpg" class="people-photo">
-						<div class="caption">
-							<h3><b>Mengxue Geng</b> (耿孟雪)</h3>
-							<p>UI@SDU, 2025/11 - present</p>
-							<p class="people-topic">Embodied AI Safety</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/gcq.jpg" class="people-photo">
-						<div class="caption">
-							<h3><b>Chenqi Guo</b> (郭陈琦)</h3>
-							<p>UI@SDU, 2025/11 - present</p>
-							<p class="people-topic">Backdoor Attack</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/hyc.jpg" class="people-photo">
-						<div class="caption">
-							<h3><b>Yichong He</b> (何易翀)</h3>
-							<p>UI@SDU, 2025/11 - present</p>
-							<p class="people-topic">Weakly-supervised Few-shot Learning</p>
-						</div>
-					</div>
-				</div>
-
-				
-				<div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/wyj.jpg" class="people-photo">
-						<div class="caption">
-							<h3><b>Yijing Wang</b> (王一景)</h3>
-							<p>UI@SDU, 2025/11 - present</p>
-							<p class="people-topic">Medical Image Enhancement</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/wzz.jpg" class="people-photo">
-						<div class="caption">
-							<h3><b>Zhuangzhi Wang</b> (王壮志)</h3>
-							<p>UI@SDU, 2025/11 - present</p>
-							<p class="people-topic">Cross-platform 3D Object Detection</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/wtsy.jpg" class="people-photo">
-						<div class="caption">
-							<h3><b>Tongshuyu Wu</b> (吴桐疏雨)</h3>
-							<p>UI@SDU, 2025/11 - present</p>
-							<p class="people-topic">Aerial-Ground Cross-view Person Re-Identification</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/xgx.jpg" class="people-photo">
-						<div class="caption">
-							<h3><b>Guangxin Xu</b> (徐光鑫)</h3>
-							<p>UI@SDU, 2025/11 - present</p>
-							<p class="people-topic">Buddha Statue Dating</p>
-						</div>
-					</div>
-				</div>
-
-
-				<div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/zy1.jpg" class="people-photo">
-						<div class="caption">
-							<h3><b>Yuan Zhu</b> (朱源)</h3>
-							<p>UI@SDU, 2025/11 - present</p>
-							<p class="people-topic">VLN for UAV</p>
-						</div>
-					</div>
-				</div>
-
-
-			</div>
-	<!-- ------------------毕业学生--------------------- -->
-			<div class="row">
-				<div class="col-md-12 academicegree">
-					<h4 class="text-center  black-text">Alumni</h4>
-				</div>
-			</div>
-
-				<!-- Alumni Scroll Section -->
-			<div class="row">
-				<div class="col-md-12">
-					<div class="alumni-scroll-container">
-						<div class="alumni-scroll-wrapper">
-							<!-- Alumni items - all graduates -->
-						<!-- ------------------博士研究生--------------------- -->
-							<div class="alumni-item">
-								<img src="./MVPLab/cjp.jpg" alt="Jinpeng Chen">
-								<div class="alumni-item-name">陈锦芃</div>
-								<div class="alumni-item-info">PhD 2021-2025</div>
-							</div>
-							<div class="alumni-item">
-								<img src="./MVPLab/lyx.jpg" alt="Yuxuan Luo">
-								<div class="alumni-item-name">罗宇轩</div>
-								<div class="alumni-item-info">PhD 2021-2025</div>
-							</div>
-							<div class="alumni-item">
-								<img src="./MVPLab/hlz.jpg" alt="Lingzhi He">
-								<div class="alumni-item-name">何凌志</div>
-								<div class="alumni-item-info">PhD 2019-2023</div>
-							</div>
-						<!-- ------------------硕士研究生--------------------- -->
-							<div class="alumni-item">
-								<img src="./MVPLab/zc.jpg" alt="Chen Zhang">
-								<div class="alumni-item-name">张晨</div>
-								<div class="alumni-item-info">MS 2020-2022</div>
-							</div>
-							<div class="alumni-item">
-								<img src="./MVPLab/yhw.jpg" alt="Haowei Yang">
-								<div class="alumni-item-name">杨浩巍</div>
-								<div class="alumni-item-info">MS 2020-2022</div>
-							</div>
-							<div class="alumni-item">
-								<img src="./MVPLab/yn.jpg" alt="Ning Yang">
-								<div class="alumni-item-name">杨宁</div>
-								<div class="alumni-item-info">MS 2020-2023</div>
-							</div>
-							<div class="alumni-item">
-								<img src="./MVPLab/zym.jpg" alt="Yumo Zhang">
-								<div class="alumni-item-name">张禹墨</div>
-								<div class="alumni-item-info">MS 2020-2023</div>
-							</div>
-							<div class="alumni-item">
-								<img src="./MVPLab/swy2.jpg" alt="Weiyu Song">
-								<div class="alumni-item-name">宋玮煜</div>
-								<div class="alumni-item-info">MS 2021-2023</div>
-							</div>
-							<div class="alumni-item">
-								<img src="./MVPLab/qq.jpg" alt="Qi Qin">
-								<div class="alumni-item-name">秦萁</div>
-								<div class="alumni-item-info">MS 2021-2024</div>
-							</div>
-							<div class="alumni-item">
-								<img src="./MVPLab/srh.jpg" alt="Ronghui Sheng">
-								<div class="alumni-item-name">盛荣晖</div>
-								<div class="alumni-item-info">MS 2021-2024</div>
-							</div>
-							<div class="alumni-item">
-								<img src="./MVPLab/ywy.jpg" alt="Wenyu Yang">
-								<div class="alumni-item-name">杨文玉</div>
-								<div class="alumni-item-info">MS 2021-2024</div>
-							</div>
-							<div class="alumni-item">
-								<img src="./MVPLab/wcl2.jpg" alt="Chunlei Wu">
-								<div class="alumni-item-name">吴春雷</div>
-								<div class="alumni-item-info">MS 2022-2024</div>
-							</div>
-							<div class="alumni-item">
-								<img src="./MVPLab/lhy.jpg" alt="Hongyu Liu">
-								<div class="alumni-item-name">刘鸿羽</div>
-								<div class="alumni-item-info">MS 2022-2025</div>
-							</div>
-							<div class="alumni-item">
-								<img src="./MVPLab/xh2.png" alt="Hang Xiong">
-								<div class="alumni-item-name">熊航</div>
-								<div class="alumni-item-info">MS 2022-2025</div>
-							</div>
-							<div class="alumni-item">
-								<img src="./MVPLab/czy.jpg" alt="Zuyao Chen">
-								<div class="alumni-item-name">陈祖耀</div>
-								<div class="alumni-item-info">MS 2019-2020</div>
-							</div>
-							<div class="alumni-item">
-								<img src="./MVPLab/hhy.jpg" alt="Heyu Huang">
-								<div class="alumni-item-name">黄和宇</div>
-								<div class="alumni-item-info">MS 2021-2022</div>
-							</div>
-							<div class="alumni-item">
-								<img src="./MVPLab/xld.jpg" alt="Lidong Xie">
-								<div class="alumni-item-name">谢礼冬</div>
-								<div class="alumni-item-info">MS 2022-2023</div>
-							</div>
-							<div class="alumni-item">
-								<img src="./MVPLab/ffx.jpeg" alt="Fuxiang Feng">
-								<div class="alumni-item-name">冯富祥</div>
-								<div class="alumni-item-info">MS 2023-2024</div>
-							</div>
-						<!-- ------------------本科实习生--------------------- -->
-							<div class="alumni-item">
-								<img src="./MVPLab/zqh.jpg" alt="Qihang Zhong">
-								<div class="alumni-item-name">钟启航</div>
-								<div class="alumni-item-info">UI 2019-2020</div>
-							</div>
-							<div class="alumni-item">
-								<img src="./MVPLab/zqj.jpg" alt="Qijian Zhang">
-								<div class="alumni-item-name">张琦坚</div>
-								<div class="alumni-item-info">UI 2020</div>
-							</div>
-							<div class="alumni-item">
-								<img src="./MVPLab/zcy.jpg" alt="Chongyang Zhao">
-								<div class="alumni-item-name">赵重阳</div>
-								<div class="alumni-item-info">UI 2020-2021</div>
-							</div>
-							<div class="alumni-item">
-								<img src="./MVPLab/hk.jpg" alt="Ke Huang">
-								<div class="alumni-item-name">黄可</div>
-								<div class="alumni-item-info">UI 2020-2022</div>
-							</div>
-							<div class="alumni-item">
-								<img src="./MVPLab/czw.jpg" alt="Zewen Chen">
-								<div class="alumni-item-name">陈泽文</div>
-								<div class="alumni-item-info">UI 2020-2021</div>
-							</div>
-							<div class="alumni-item">
-								<img src="./MVPLab/lqw.jpg" alt="Qinwei Lin">
-								<div class="alumni-item-name">林秦伟</div>
-								<div class="alumni-item-info">UI 2020-2021</div>
-							</div>
-							<div class="alumni-item">
-								<img src="./MVPLab/lx.jpg" alt="Xuan Liu">
-								<div class="alumni-item-name">刘璇</div>
-								<div class="alumni-item-info">UI 2020-2021</div>
-							</div>
-							<div class="alumni-item">
-								<img src="./MVPLab/lqm.jpg" alt="Qingming Liu">
-								<div class="alumni-item-name">刘青明</div>
-								<div class="alumni-item-info">UI 2021-2022</div>
-							</div>
-							<div class="alumni-item">
-								<img src="./MVPLab/wzx.jpg" alt="Zixuan Wang">
-								<div class="alumni-item-name">王子轩</div>
-								<div class="alumni-item-info">UI 2021-2022</div>
-							</div>
-							<div class="alumni-item">
-								<img src="./MVPLab/gyc.jpg" alt="Yuchen Guan">
-								<div class="alumni-item-name">关雨晨</div>
-								<div class="alumni-item-info">UI 2021-2023</div>
-							</div>
-							<div class="alumni-item">
-								<img src="./MVPLab/zkp.jpg" alt="Kepu Zhang">
-								<div class="alumni-item-name">张珂镨</div>
-								<div class="alumni-item-info">UI 2022</div>
-							</div>
-							<div class="alumni-item">
-								<img src="./MVPLab/smy.jpg" alt="Mengyao Sun">
-								<div class="alumni-item-name">孙梦瑶</div>
-								<div class="alumni-item-info">UI 2022-2023</div>
-							</div>
-							<div class="alumni-item">
-								<img src="./MVPLab/zrh2.jpeg" alt="Runhua Zhang">
-								<div class="alumni-item-name">张润华</div>
-								<div class="alumni-item-info">UI 2023-2024</div>
-							</div>
-							<div class="alumni-item">
-								<img src="./MVPLab/zss.jpeg" alt="Shenshen Zhang">
-								<div class="alumni-item-name">张申申</div>
-								<div class="alumni-item-info">UI 2023</div>
-							</div>
-							<div class="alumni-item">
-								<img src="./MVPLab/zzt.jpeg" alt="Shoutai Zhu">
-								<div class="alumni-item-name">赵子同</div>
-								<div class="alumni-item-info">UI 2023-2024</div>
-							</div>
-							<div class="alumni-item">
-								<img src="./MVPLab/yzj.jpeg" alt="Zongjie Yu">
-								<div class="alumni-item-name">于宗吉</div>
-								<div class="alumni-item-info">UI 2024-2025</div>
-							</div>
-							<div class="alumni-item">
-								<img src="./MVPLab/wap1.jpg" alt="Anpeng Wang">
-								<div class="alumni-item-name">王安鹏</div>
-								<div class="alumni-item-info">UI 2024-2025</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		<div class="row">
-<ul class="graid3-ul" style="list-style-type:disc; ">
-<div style="text-align: justify; display: block; margin-right: auto;">
-
-<li>2021/09 - 2025/06，<b><a href="https://jinpeng0528.github.io"  target="_blank"><font color="#1C86EE">陈锦芃</font></a></b>，联合指导博士（香港城市大学），研究方向：连续学习 (<font color="#CE0000">1TPAMI，1ICML，1NeurIPS，1ECCV，1TCyb</font>)</li>					
-<li>2021/09 - 2025/07，<b>罗宇轩</b>，联合指导博士（香港城市大学），研究方向：连续学习、小样本学习 (<font color="#CE0000">1TMM，1TCSVT，1PR</font>)</li>					
-<li>2019/09 - 2023/12，<b>何凌志</b>，联合指导博士（北京交通大学），研究方向：图像去反射 (<font color="#CE0000">1CVPR，2TMM</font>)</li>
-<li>2020/09 - 2022/06，<b><a href="https://zhangchen98.github.io"  target="_blank"><font color="#1C86EE">张晨</font></a></b>，硕士研究生，硕士论文：跨模态交互引导的RGB-D显著性目标检测研究 (<font color="#CE0000">1ACM MM，1软件学报；国奖；中国图学学会优硕，BSIG优硕，校优硕</font>)</li>	
-<li>2020/09 - 2022/06，<b>杨浩巍</b>，硕士研究生，硕士论文：基于上下文建模的COVID-19肺部感染区域分割算法研究 (<font color="#CE0000">1TIM</font>)</li>	
-<li>2020/09 - 2023/06，<b>杨宁</b>，硕士研究生，硕士论文：基于关联关系建模的协同显著性目标检测研究 (<font color="#CE0000">1TCyb，1TCSVT；国奖；校优硕</font>)</li>	
-<li>2020/09 - 2023/06，<b>张禹墨</b>，硕士研究生，硕士论文：光学遥感影像像素级语义理解研究 (<font color="#CE0000">1TGRS；国奖；BSIG优硕提名</font>)</li>	
-<li>2021/09 - 2023/06，<b>宋玮煜</b>，硕士研究生，硕士论文：面向不同监督形式的视频显著性目标检测研究 (<font color="#CE0000">1TETCI；校优硕</font>)</li>	
-<li>2021/09 - 2024/06，<b>秦萁</b>，硕士研究生，硕士论文：非完美监督下的视觉显著性计算研究 (<font color="#CE0000">1TCSVT；国奖；校优硕</font>)</li>	
-<li>2021/09 - 2024/06，<b>盛荣晖</b>，硕士研究生，硕士论文：多输入交互引导的图像超分辨率重建研究 (<font color="#CE0000">1TIP，1TIM，CVPR竞赛亚军</font>)</li>	
-<li>2021/09 - 2024/06，<b>杨文玉</b>，硕士研究生，硕士论文：面向水下环境的图像增强算法研究 (<font color="#CE0000">1TIP；国奖</font>)</li>	
-<li>2022/09 - 2024/06，<b>吴春雷</b>，硕士研究生，硕士论文：光照环境鲁棒的自监督单目深度估计研究 (<font color="#CE0000">1TIP；校优硕</font>)</li>
-<li>2022/09 - 2025/06，<b>刘鸿羽</b>，硕士研究生，硕士论文：面向高分辨率场景下显著性目标检测研究 (<font color="#CE0000">1ICML，1ACM MM；国奖×2；CSIG优硕提名；BSIG优硕；校优硕</font>)</li>	
-<li>2022/09 - 2025/06，<b>熊航</b>，硕士研究生，硕士论文：小样本条件下的语义分割研究 (<font color="#CE0000">2TMM，1ACM MM；国奖；校优硕</font>)</li>	
-<li>2019/09 - 2020/06，<b><a href="https://josephchenhub.github.io"  target="_blank"><font color="#1C86EE">陈祖耀</font></a></b>，联合指导硕士（中科院计算所），研究方向：显著性检测 (<font color="#CE0000">1TIP，1AAAI</font>)，去向：香港理工大学博士</li>
-<li>2021/03 - 2022/03，<b>黄和宇</b>，联合指导硕士（天津工业大学），研究方向：医学分割 (<font color="#CE0000">1ACM TOMM</font>)，去向：华中科技大学博士</li>
-<li>2022/01 - 2023/10，<b>谢礼冬</b>，联合指导硕士（北京师范大学），研究方向：低光图像增强，去向：北京航空航天大学博士</li>	
-<li>2023/09 - 2024/12，<b>冯富祥</b>，联合指导硕士（山东大学），研究方向：高光谱图像重建，去向：山东大学博士</li>	
-<li>2019/10 - 2020/10，<b>钟启航</b>，本科实习生，研究方向：高光谱图像重建 (<font color="#CE0000">1SPIC</font>)，去向：中建八局工作</li>
-<li>2020/01 - 2020/12，<b><a href="https://keeganhk.github.io"  target="_blank"><font color="#1C86EE">张琦坚</font></a></b>，本科实习生，研究方向：显著性检测 (<font color="#CE0000">1TIP，1NeurIPS</font>)，去向：香港城市大学博士</li>	
-<li>2020/04 - 2021/06，<b>赵重阳</b>，本科实习生，研究方向：指代目标分割，去向：澳大利亚阿德莱德大学硕士</li>	
-<li>2020/06 - 2022/12，<b>黄可</b>，本科实习生，研究方向：全景显著性检测 (<font color="#CE0000">1TNNLS</font>)</li>
-<li>2020/09 - 2021/06，<b>陈泽文</b>，本科实习生，研究方向：COVID-19分割 (<font color="#CE0000">1TCE</font>)，去向：中国科学院自动化研究所硕士</li>	
-<li>2020/09 - 2021/06，<b>林秦伟</b>，本科实习生，研究方向：RGB-D显著性检测 (<font color="#CE0000">1TIP</font>)，去向：清华大学硕士</li>	
-<li>2020/09 - 2021/06，<b>刘璇</b>，本科实习生，研究方向：遥感图像显著性检测 (<font color="#CE0000">1PRCV</font>)，去向：北京洛必德工作</li>	
-<li>2021/04 - 2022/04，<b>刘青明</b>，本科实习生，研究方向：玻璃检测，去向：香港中文大学深圳硕士</li>	
-<li>2021/04 - 2022/04，<b>王子轩</b>，本科实习生，研究方向：RGB-T显著性检测，去向：美国南加州大学博士</li>	
-<li>2021/10 - 2023/06，<b>关雨晨</b>，本科实习生，研究方向：阴影检测 (<font color="#CE0000">1ACM MM</font>)，去向：清华大学硕士</li>	
-<li>2022/01 - 2022/07，<b><a href="https://ke-01.github.io"  target="_blank"><font color="#1C86EE">张珂镨</font></a></b>，本科实习生，研究方向：RGB-T显著性检测 (<font color="#CE0000">1TMM</font>)，去向：中国人民大学硕士</li>
-<li>2022/10 - 2023/06，<b>孙梦瑶</b>，本科实习生，研究方向：伪装目标检测 (<font color="#CE0000">1ACM MM</font>)，去向：北京交通大学硕士</li>	
-<li>2023/03 - 2024/06，<b>张润华</b>，本科实习生，研究方向：玻璃检测，去向：浙江大学硕士</li>	
-<li>2023/03 - 2024/06，<b>张申申</b>，本科实习生，研究方向：EEG信号处理，去向：北京大学博士</li>
-<li>2023/09 - 2024/06，<b>赵子同</b>，本科实习生，研究方向：水下显著性检测，去向：上海交通大学博士</li>
-<li>2024/05 - 2025/10，<b><a href="https://zjyu.github.io"  target="_blank"><font color="#1C86EE">于宗吉</font></a></b>，本科实习生，研究方向：水下实例分割 (<font color="#CE0000">1ACM MM</font>)，去向：上海交通大学博士</li>
-<li>2024/05 - 2025/10，<b><a href="https://rawwap.github.io"  target="_blank"><font color="#1C86EE">王安鹏</font></a></b>，本科实习生，研究方向：小样本分割 (<font color="#CE0000">1AAAI oral</font>)，去向：山东大学硕士</li>
-</ul>
-			</div>
-			<!-- ------------------照片--------------------- -->
-		<div class="row">
-			<div class="col-md-12 academicegree">
-				<h4 class="text-center black-text">Photos</h4>
-			</div>
-			<!-- Photos Scroll Section -->
-			<div class="col-md-12">
-				<div class="photos-scroll-container">
-					<div class="photos-scroll-wrapper">
-						<!-- Photos items - auto-cloned for seamless loop -->
-						<div class="photos-item">
-							<img src="./photos/photo1.jpg" alt="Photo 1">
-							<div class="photos-item-title">2024年亚洲人工智能技术大会</div>
-						</div>
-						<div class="photos-item">
-							<img src="./photos/photo2.jpg" alt="Photo 2">
-							<div class="photos-item-title">2024年SAM院士访问山东大学</div>
-						</div>
-						<div class="photos-item">
-							<img src="./photos/AAAI26.jpg" alt="Photo 19">
-							<div class="photos-item-title">2026年实验室在新加坡参加AAAI会议</div>
-						</div>
-						<div class="photos-item">
-							<img src="./photos/photo3.jpg" alt="Photo 3">
-							<div class="photos-item-title">中国人工智能学会教学成果一等奖颁奖典礼</div>
-						</div>
-						<div class="photos-item">
-							<img src="./photos/photo4.jpg" alt="Photo 4">
-							<div class="photos-item-title">2024年实验室在意大利参加ECCV会议</div>
-						</div>
-						<div class="photos-item">
-							<img src="./photos/photo6.jpg" alt="Photo 6">
-							<div class="photos-item-title">《人工智能通识教材》发布</div>
-						</div>
-						<div class="photos-item">
-							<img src="./photos/photo7.jpg" alt="Photo 7">
-							<div class="photos-item-title">2024年SAM院士访问山东大学</div>
-						</div>
-						<div class="photos-item">
-							<img src="./photos/photo8.jpg" alt="Photo 8">
-							<div class="photos-item-title">丛润民教授访问香港浸会大学</div>
-						</div>
-						<div class="photos-item">
-							<img src="./photos/photo9.jpg" alt="Photo 9">
-							<div class="photos-item-title">2024年本科实习生毕业合影</div>
-						</div>
-						<div class="photos-item">
-							<img src="./photos/AAAI26wapOral.jpg" alt="Photo 21">
-							<div class="photos-item-title">王安鹏在新加坡AAAI'26做论文汇报</div>
-						</div>
-						<div class="photos-item">
-							<img src="./photos/photo10.png" alt="Photo 10">
-							<div class="photos-item-title">2025年教师节合影</div>
-						</div>
-						<div class="photos-item">
-							<img src="./photos/photo11.png" alt="Photo 11">
-							<div class="photos-item-title">2025年硕士研究生毕业合影</div>
-						</div>
-						<div class="photos-item">
-							<img src="./photos/AAAI26-1.jpg" alt="Photo 20">
-							<div class="photos-item-title">2026年实验室在新加坡参加AAAI会议</div>
-						</div>
-						<div class="photos-item">
-							<img src="./photos/photo12.jpg" alt="Photo 12">
-							<div class="photos-item-title">联合培养博士陈锦芃答辩留念</div>
-						</div>
-						<div class="photos-item">
-							<img src="./photos/photo13.jpg" alt="Photo 13">
-							<div class="photos-item-title">2024年教师节合影</div>
-						</div>
-						<div class="photos-item">
-							<img src="./photos/AAAI26czyOral.jpg" alt="Photo 22">
-							<div class="photos-item-title">陈志杨在新加坡AAAI'26做论文汇报</div>
-						</div>
-						<div class="photos-item">
-							<img src="./photos/photo14.jpg" alt="Photo 14">
-							<div class="photos-item-title">2025年山东计算机学会自然科学一等奖颁奖典礼</div>
-						</div>
-						<div class="photos-item">
-							<img src="./photos/photo15.png" alt="Photo 15">
-							<div class="photos-item-title">《人工智能通识教材》发布</div>
-						</div>
-						<div class="photos-item">
-							<img src="./photos/photo16.jpg" alt="Photo 16">
-							<div class="photos-item-title">方豪在意大利ECCV会议上作竞赛冠军方案分享</div>
-						</div>
-						<div class="photos-item">
-							<img src="./photos/photo17.jpg" alt="Photo 17">
-							<div class="photos-item-title">入选图像图形领域十大前沿科技问题</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-	
-
-			
-		</div>
-		
-		<!-- Commented section below -->
-		<div style="display:none;">
-				
-				<!--<div class="col-md-3">
-					<div class="thumbnail-people">
-						<a href="#">
-							<img src="./MVPLab/hlz.jpg" class="people-photo">
-						</a>
-						<div class="caption">
-							<h3><b>Lingzhi He</b> (何凌志)</h3>
-							<p>co-supervised with Prof. Yao Zhao</p>	
-							<p>PhD@BJTU, 2019 - 2023</p>
-							<p class="people-topic">Visual Content Enhancement</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/zc.jpg" class="people-photo">
-						<div class="caption">
-							<h3><b>Chen Zhang</b> (张晨)</h3>
-							<p>MS@BJTU, 2020/09 - 2022/06</p>
-							<p class="people-topic">硕士论文：跨模态交互引导的RGB-D显著性目标检测研究 (<font color="#CE0000">中国图学学会优硕，BSIG优硕，校优硕</font>)</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/yhw.jpg" class="people-photo">
-						<div class="caption">
-							<h3><b>Haowei Yang</b> (杨浩巍)</h3>
-							<p>MS@BJTU, 2020/09 - 2022/06</p>
-							<p class="people-topic">硕士论文：基于上下文建模的COVID-19肺部感染区域分割算法研究</p>
-						</div>
-					</div>
-				</div>
-                               <div class="col-md-3">
-					<div class="thumbnail-people">
-						<a href="#">
-							<img src="./MVPLab/yn.jpg" class="people-photo">
-						</a>
-						<div class="caption">
-							<h3><b>Ning Yang</b> (杨宁)</h3>
-							<p>MS@BJTU, 2020/09 - 2023/06</p>
-							<p class="people-topic">硕士论文：基于关联关系建模的协同显著性目标检测研究 (<font color="#CE0000">校优硕</font>)</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/zym.jpg" class="people-photo">
-						<div class="caption">
-							<h3><b>Yumo Zhang</b> (张禹墨)</h3>
-							<p>MS@BJTU, 2020/09 - 2023/06</p>
-							<p>Now: 中国人寿</p>
-							<p class="people-topic">硕士论文：光学遥感影像像素级语义理解研究 (<font color="#CE0000">BSIG优硕提名</font>)</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/swy2.jpg" class="people-photo">
-						<div class="caption">
-							<h3><b>Weiyu Song</b> (宋玮煜)</h3>
-							<p>MS@BJTU, 2021/09 - 2023/06</p>
-							<p class="people-topic">硕士论文：面向不同监督形式的视频显著性目标检测研究 (<font color="#CE0000">校优</font>)</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-3">
-					<div class="thumbnail-people">
-						<a href="#">
-							<img src="./MVPLab/qq.jpg" class="people-photo">
-						</a>
-						<div class="caption">
-							<h3><b>Qi Qin</b> (秦萁)</h3>
-							<p>MS@BJTU, 2021/09 - 2024/06</p>
-							<p>Now: 悉尼大学博士</p>
-							<p class="people-topic">硕士论文：非完美监督下的视觉显著性计算研究 (<font color="#CE0000">校优硕</font>)</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/srh.jpg" class="people-photo">
-						<div class="caption">
-							<h3><b>Ronghui Sheng</b> (盛荣晖)</h3>
-							<p>MS@BJTU, 2021/09 - 2024/06</p>
-							<p>Now: 中兴通讯</p>
-							<p class="people-topic">硕士论文：多输入交互引导的图像超分辨率重建研究</p>
-
-						</div>
-					</div>
-				</div>
-			    
-				<div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/ywy.jpg" class="people-photo">
-						<div class="caption">
-							<h3><b>Wenyu Yang</b> (杨文玉)</h3>
-							<p>MS@BJTU, 2021/09 - 2024/06</p>
-							<p>Now: 中国农业银行</p>
-							<p class="people-topic">硕士论文：面向水下环境的图像增强算法研究</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/wcl2.jpg" class="people-photo">
-						<div class="caption">
-							<h3><b>Chunlei Wu</b> (吴春雷)</h3>
-							<p>MS@BJTU, 2022/09 - 2024/06</p>
-							<p>Now: 中国人寿</p>
-							<p class="people-topic">硕士论文：光照环境鲁棒的自监督单目深度估计研究 (<font color="#CE0000">校优硕</font>)</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/ffx.jpeg" class="people-photo">
-						<div class="caption">
-							<h3><b>Fuxiang Feng</b> (冯富祥)</h3>
-							<p>MS@SDU, 2023 - 2024</p>
-							<p class="people-topic">Hyperspectral Reconstruction</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-3">
-					<div class="thumbnail-people">
-						<a href="#">
-							<img src="./MVPLab/czy.jpg" class="people-photo">
-						</a>
-						<div class="caption">		
-							<h3><b><a href="https://josephchenhub.github.io/"  target="_blank"><font color="#1C86EE">Zuyao Chen (陈祖耀)</font></a></b></h3>
-							<p>Co-MS@UCAS, 2019/08 - 2020/06</p>
-							<p>Now: 香港理工大学博士</p>
-							<p class="people-topic">Salient Object Detection</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="thumbnail-people">
-						<a href="#">
-							<img src="./MVPLab/zqj.jpg" class="people-photo">
-						</a>
-						<div class="caption">
-							<h3><b>Qijian Zhang</b> (张琦坚)</h3>
-							<p>UI@BNU, 2020/01 - 2020/12</p>
-							<p>Now: 香港城市大学博士</p>
-							<p class="people-topic">Co-salient Object Detection</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="thumbnail-people">
-						<a href="#">
-							<img src="./MVPLab/xld.jpg" class="people-photo">
-						</a>
-						<div class="caption">
-							<h3><b>Lidong Xie</b> (谢礼冬)</h3>
-							<p>VS@BNU, 2022/01 - 2023/01</p>
-							<p>Now: 北京航空航天大学博士</p>
-							<p class="people-topic">Low-light Image Enhancement</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="thumbnail-people">
-						<a href="#">
-							<img src="./MVPLab/hk.jpg" class="people-photo">
-						</a>
-						<div class="caption">
-							<h3><b>Ke Huang</b> (黄可)</h3>
-							<p>UI@BJTU, 2020/06 - 2022/12</p>
-							<p class="people-topic">SOD in 360◦ Omnidirectional Images</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/wzx.jpg" class="people-photo">
-						<div class="caption">
-							<h3><b>Zixuan Wang</b> (王子轩)</h3>
-							<p>UI@BJTU, 2021/04 - 2022/04</p>
-							<p>Now: 南加州大学硕士</p>
-							<p class="people-topic">RGB-T Salient Object Detection</p>
-						</div>
-					</div>
-				</div>
-			    <div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/lqm.jpg" class="people-photo">
-						<div class="caption">
-							<h3><b>Qingming Liu</b> (刘青明)</h3>
-							<p>UI@BJTU, 2021/04 - 2022/04</p>
-							<p>Now: 香港城市大学博士</p>
-							<p class="people-topic">Glass Detection</p>
-						</div>
-					</div>
-				</div>
-			 <div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/lqy.jpg" class="people-photo">
-						<div class="caption">
-							<h3><b>Qingyun Liu</b> (刘青云)</h3>
-							<p>UI@BJTU, 2022/10 - 2024/02</p>
-							<p class="people-topic">Inharmonious Region Localization</p>
-						</div>
-					</div>
-				</div>
-			    <div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/zkp.jpg" class="people-photo">
-						<div class="caption">
-							<h3><b>Kepu Zhang</b> (张珂镨)</h3>
-							<p>UI@BJTU, 2022/01 - 2022/07</p>
-							<p>Now: 中国人民大学硕士</p>
-							<p class="people-topic">RGB-T Salient Object Detection</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="thumbnail-people">
-						<a href="#">
-							<img src="./MVPLab/hhy.jpg" class="people-photo">
-						</a>
-						<div class="caption">
-							<h3><b>Heyu Huang</b> (黄和宇)</h3>
-							<p>VS@TGU, 2021/03 - 2022/03</p>
-							<p>Now: 华中科技大学博士</p>
-							<p class="people-topic">Medical Image Prcessing</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/lqw.jpg" class="people-photo">
-						<div class="caption">
-							<h3><b>Qinwei Lin</b> (林秦伟)</h3>
-							<p>UI@BJTU, 2020/09 - 2021/06</p>
-							<p>Now: 清华大学深研院硕士</p>
-							<p class="people-topic">RGB-D Salient Object Detection</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/lx.jpg" class="people-photo">
-						<div class="caption">
-							<h3><b>Xuan Liu</b> (刘璇)</h3>
-							<p>UI@BJTU, 2020/09 - 2021/06</p>
-							<p>Now: 北京洛必德</p>
-							<p class="people-topic">SOD in Optical RSIs</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/czw.jpg" class="people-photo">
-						<div class="caption">
-							<h3><b>Zewen Chen</b> (陈泽文)</h3>
-							<p>UI@BJTU, 2020/09 - 2021/06</p>
-							<p>Now: 中国科学院自动化研究所硕士</p>
-							<p class="people-topic">COVID-19 Segmentation</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/zcy.jpg" class="people-photo">
-						<div class="caption">
-							<h3><b>Chongyang Zhao</b> (赵重阳)</h3>
-							<p>UI@BJTU, 2020/04 - 2021/06</p>
-							<p>Now: 澳大利亚阿德莱德大学MPhil</p>
-							<p class="people-topic">Referring Expression Comprehension & Segmentation</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="thumbnail-people">
-						<a href="#">
-							<img src="./MVPLab/zqh.jpg" class="people-photo">
-						</a>
-						<div class="caption">
-							<h3><b>Qihang Zhong</b> (钟启航)</h3>
-							<p>UI@BJTU, 2019/10 - 2020/10</p>
-							<p>Now: 中建八局</p>
-							<p class="people-topic">Underwater Image Quality Assessment</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="thumbnail-people">
-						<a href="#">
-							<img src="./MVPLab/fcj.jpg" class="people-photo">
-						</a>
-						<div class="caption">
-							<h3><b>Chaojie Fan</b> (范超杰)</h3>
-							<p>co-supervised with Prof. Sam Kwong</p>	
-							<p>PhD@CSU, 2019 - 2022</p>
-							<p class="people-topic">Affective Brain Computer Interface</p>
-						</div>
-					</div>
-				</div>
-				 <div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/zst.jpg" class="people-photo">
-						<div class="caption">
-							<h3><b>Shoutai Zhu</b> (朱守泰)</h3>
-							<p>UI@BJTU, 2022/10 - 2023/02</p>
-							<p class="people-topic">SOD in Underwater Image</p>
-						</div>
-					</div>
-				</div>
-				 <div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/gyc.jpg" class="people-photo">
-						<div class="caption">
-							<h3><b>Yuchen Guan</b> (关雨晨)</h3>
-							<p>UI@BJTU, 2021/10 - 2023/06</p>
-							<p>Now: 清华大学深研院硕士</p>
-							<p class="people-topic">Shadow Detection</p>
-						</div>
-					</div>
-				</div>
-			     <div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/smy.jpg" class="people-photo">
-						<div class="caption">
-							<h3><b>Mengyao Sun</b> (孙梦瑶)</h3>
-							<p>UI@BJTU, 2022/10 - 2023/06</p>
-							<p>Now: 北京交通大学硕士</p>
-							<p class="people-topic">Camouflaged Object Detection</p>
-						</div>
-					</div>
-				</div>
-				
-			    
-			    <div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/zrh2.jpeg" class="people-photo">
-						<div class="caption">
-							<h3><b>Runhua Zhang</b> (张润华)</h3>
-							<p>UI@SDU, 2023/03 - 2024/06</p>
-							<p>Now: 浙江大学硕士</p>
-							<p class="people-topic">Glass Detection</p>
-						</div>
-					</div>
-				</div>
-				 <div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/zss.jpeg" class="people-photo">
-						<div class="caption">
-							<h3><b>Shenshen Zhang</b> (张申申)</h3>
-							<p>UI@SDU, 2023/03 - 2023/08</p>
-							<p>Now: 北京大学博士</p>
-							<p class="people-topic">EEG Signal Processing</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="thumbnail-people">
-						<img src="./MVPLab/zdj.jpeg" class="people-photo">
-						<div class="caption">
-							<h3><b>Dengjia Zhang</b> (张登甲)</h3>
-							<p>UI@BJTU, 2023/03 - 2023/06</p>
-							<p class="people-topic">Few-shot Learning</p>
-						</div>
-					</div>
-				</div>	
-		    </div>
-		</div>
-		</div>
-	</div>
-	<script type="text/javascript" src="./files/jquery.min.js.下载"></script>
-		<script type="text/javascript" src="./files/bootstrap.js.下载"></script>
-		<script type="text/javascript" src="./files/jquery.banner.js.下载"></script>
-		<script type="text/javascript" src="./files/jquery.prettyPhoto.js.下载"></script>		
-		<script type="text/javascript" src="./files/jquery.isotope.js.下载"></script>	
-		<script type="text/javascript" src="./files/main.js.下载"></script>		
- </body>
+<script src="./assets/site-common.js" defer></script>
+</body>
 </html>

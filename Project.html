@@ -1,59 +1,42 @@
 <!DOCTYPE html>
 <!-- saved from url=(0057)http://www.icst.pku.edu.cn/struct/people/yangs/index.html -->
-<html class="csstransforms csstransforms3d csstransitions"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html class="csstransforms csstransforms3d csstransitions" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		
-		<title>Runmin Cong</title>
+		
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Runmin Cong</title>
 		<link href="./files/bootstrap.css" rel="stylesheet" type="text/css" media="all">
 		<link href="./files/style.css" rel="stylesheet" type="text/css" media="all">
 		<link href="./files/prettyPhoto.css" rel="stylesheet" type="text/css" media="all">		
 		<link href="./files/css" rel="stylesheet" type="text/css">	
+	
+		<link href="./assets/site-common.css" rel="stylesheet" type="text/css" media="all">
 	</head>
-	<body>
+	<body data-page="publications">
 		<!---start-wrap--->
 		<!---start-header--->
-	<div class="header">
-		<div class="wrap">
-			<!---start-logo--->
-			<div class="logo">
-				<a href="./index.html">Runmin Cong</a>
-			</div>
-			<!---End-logo--->
-			<!---start-top-nav--->
-			<div class="top-nav">
-				<ul>
-					<li id="Home" onclick="func(&#39;Me&#39;)"><a href="./index.html" class="scroll">Home</a></li>
-					<li id="Profile" onclick="func(&#39;Profile&#39;)"><a href="./Profile.html" class="scroll">Profile</a></li>
-					<li id="Publications" onclick="func(&#39;Publications&#39;)"><a href="./Publication.html" class="scroll">Publications</a></li>
-					<li id="AICourse" onclick="func(&#39;AI COURSE&#39;)"><a href="https://rmcong.github.io/AI_COURSE.html" class="scroll">AI COURSE</a></li>
-					<li id="Profile-chinese" onclick="func(&#39;Honors Awards&#39;)"><a href="./Honors Awards.html" class="scroll">Honors & Awards</a></li>
-					<li id="Publications" onclick="func(&#39;Academic Activities&#39;)"><a href="./Academic Activities.html" class="scroll">Academic Activities</a></li>
-                                        <!--<li id="Projects" onclick="func(&#39;Projects&#39;)"><a href="./Project.html" class="scroll">Projects</a></li>-->
-					<!-- <li id="Art" onclick="func(&#39;Art&#39;)"><a href="http://www.icst.pku.edu.cn/struct/people/yangs/index.html#art" class="scroll">Art Gallery</a></li>	-->
-					<li id="Profile-chinese" onclick="func(&#39;Profile-chinese&#39;)"><a href="./Profile-chinese.html" class="scroll">中文简介</a></li>
-					<li id="Contact" onclick="func(&#39;Contact&#39;)"><a href="./Contact.html" class="scroll">Contact</a></li>
+<!-- site-shared-header:start -->
+    <div class="header site-shared-header">
+        <div class="wrap">
+            <div class="logo">
+                <a href="./index.html">Runmin Cong</a>
+            </div>
+            <div class="top-nav site-top-nav">
+                <ul>
+                    <li class="site-nav-item" data-nav-key="home"><a href="./index.html" class="scroll">Home</a></li>
+                    <li class="site-nav-item" data-nav-key="profile"><a href="./Profile.html" class="scroll">Profile</a></li>
+                    <li class="site-nav-item" data-nav-key="publications"><a href="./Publication.html" class="scroll">Publications</a></li>
+                    <li class="site-nav-item" data-nav-key="honors"><a href="./Honors Awards.html" class="scroll">Honors & Awards</a></li>
+                    <li class="site-nav-item" data-nav-key="activities"><a href="./Academic Activities.html" class="scroll">Academic Activities</a></li>
+                    <li class="site-nav-item" data-nav-key="ai-course"><a href="./AI_COURSE.html" class="scroll">AI COURSE</a></li>
+                    <li class="site-nav-item" data-nav-key="chinese"><a href="./Profile-chinese.html" class="scroll">中文简介</a></li>
+                    <li class="site-nav-item" data-nav-key="contact"><a href="./Contact.html" class="scroll">Contact</a></li>
+                </ul>
+            </div>
+            <div class="clear"> </div>
+         </div>
+    </div>
+    <!-- site-shared-header:end -->
 
-				</ul>
-			</div>
-			<div class="clear"> </div>
-			<!---End-top-nav--->
-	     </div>
-	</div>
-	
-	<script> 
-	var lastname = 'Me';
-	function func(name){
-		var div = document.getElementById(name); 
-		div.className = 'active'; 
-		div = document.getElementById(lastname); 
-		div.className = ''; 
-		lastname = name;
-	}
-	function coming_soon()
-	{
-		alert("Coming soon.");
-	}
-	</script> 
-	
 		<!---End-wrap--->
 			
 		<div class="content">
@@ -138,13 +121,15 @@
 
 	</div>
 	
-		<script type="text/javascript" src="./files/jquery.min.js.下载"></script>
-		<script type="text/javascript" src="./files/bootstrap.js.下载"></script>
-		<script type="text/javascript" src="./files/jquery.banner.js.下载"></script>
-		<script type="text/javascript" src="./files/jquery.prettyPhoto.js.下载"></script>		
-		<script type="text/javascript" src="./files/jquery.isotope.js.下载"></script>	
-		<script type="text/javascript" src="./files/main.js.下载"></script>				
+		<script type="text/javascript" src="./files/jquery.min.js.下载"></script defer>
+		<script type="text/javascript" src="./files/bootstrap.js.下载"></script defer>
+		<script type="text/javascript" src="./files/jquery.banner.js.下载"></script defer>
+		<script type="text/javascript" src="./files/jquery.prettyPhoto.js.下载"></script defer>		
+		<script type="text/javascript" src="./files/jquery.isotope.js.下载"></script defer>	
+		<script type="text/javascript" src="./files/main.js.下载"></script defer>				
 	
 
 
+
+		<script src="./assets/site-common.js" defer></script>
 </body></html>
