@@ -1,370 +1,305 @@
 <!DOCTYPE html>
-<!-- saved from url=(0057)http://www.icst.pku.edu.cn/struct/people/yangs/index.html -->
-<html class="csstransforms csstransforms3d csstransitions"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		
-		<title>Chuancang Ding</title>
-		<link href="./files/bootstrap.css" rel="stylesheet" type="text/css" media="all">
-		<link href="./files/style.css" rel="stylesheet" type="text/css" media="all">
-		<link href="./files/prettyPhoto.css" rel="stylesheet" type="text/css" media="all">		
-		<link href="./files/css" rel="stylesheet" type="text/css">	
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chuancang Ding</title>
 
-	<style>
-			.people-photo {
-				border-radius: 50%;
-				height:300px!important;
-				width:200px!important;
-				box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.2), 0 5px 12px 0 rgba(0, 0, 0, 0.19);
-				margin-bottom: 5px;
-			}
-			.thumbnail-mvp{
-				padding: 4px;
-				margin-bottom: 20px;
-				line-height: 1.42857143;
-				text-align: center
-			}
-			.thumbnail-people{
-				padding: 4px;
-				margin-bottom: 5px;
-				/* height: 340px; */
-				line-height: 1.42857143;
-				text-align: center
-			}
-			.container{
-				font-family: Palatino Linotype, Helvetica Neue, Helvetica, Arial, sans-serif;
-			}
+  <link href="./files/bootstrap.css" rel="stylesheet">
+  <link href="./files/style.css" rel="stylesheet">
+  <link href="./files/prettyPhoto.css" rel="stylesheet">
+  <link href="./files/css" rel="stylesheet">
 
-			.academicegree{
-				font-size: 2.28rem;
-				/* line-height: 110%; */
-				margin: 1.14rem 0 0.912rem 0;
-			}
-			.row:nth-child(2n){
-				background:whitesmoke;
-			}
-			.row {
-				margin-bottom: 50px;
-			}
-			.people-topic {
-				font-style: italic;
-				color: #1a237e;
-			}
-		</style>
-	</head>
-	<body>
-		<!---start-wrap--->
-		<!---start-header--->
-	<div class="header">
-		<div class="wrap">
-			<!---start-logo--->
-			<div class="logo">
-				<a href="./index.html">Chuancang Ding</a>
-			</div>
-			<!---End-logo--->
-			<!---start-top-nav--->
-			<div class="top-nav">
-				<ul>
-					<li id="Home" onclick="func(&#39;Me&#39;)"><a href="./index.html" class="scroll">Home</a></li>
-					<li id="Profile" onclick="func(&#39;Profile&#39;)"><a href="./Profile.html" class="scroll">Profile</a></li>
-					<li id="Publications" onclick="func(&#39;Publications&#39;)"><a href="./Publication.html" class="scroll">Publications</a></li>
-					<!---<li id="Profile-chinese" onclick="func(&#39;Honors Awards&#39;)"><a href="./Honors Awards.html" class="scroll">Honors & Awards</a></li>-->
-					<li id="AICourse" onclick="func(&#39;AI COURSE&#39;)"><a href="https://rmcong.github.io/AI_COURSE.html" class="scroll">AI COURSE</a></li>
-					<li id="MVPLab" onclick="func(&#39;MVP Lab&#39;)"><a href="./MVPLab.html" class="scroll">MVP Group</a></li>
-                                        <!--<li id="Projects" onclick="func(&#39;Projects&#39;)"><a href="./Project.html" class="scroll">Projects</a></li>-->
-					<!-- <li id="Art" onclick="func(&#39;Art&#39;)"><a href="http://www.icst.pku.edu.cn/struct/people/yangs/index.html#art" class="scroll">Art Gallery</a></li>	-->
-					<li id="Profile-chinese" onclick="func(&#39;Profile-chinese&#39;)"><a href="./Profile-chinese.html" class="scroll">中文简介</a></li>
-					<li id="Contact" onclick="func(&#39;Contact&#39;)"><a href="./Contact.html" class="scroll">Contact</a></li>
-				</ul>
-			</div>
-			<div class="clear"> </div>
-			<!---End-top-nav--->
-	     </div>
-	</div>
-	
-	<script> 
-	var lastname = 'Me';
-	function func(name){
-		var div = document.getElementById(name); 
-		div.className = 'active'; 
-		div = document.getElementById(lastname); 
-		div.className = ''; 
-		lastname = name;
-	}
-	function coming_soon()
-	{
-		alert("Coming soon.");
-	}
-	</script> 
-	
-		<!---End-wrap--->
-	<div class="content">
-		<div class="grid1" id="me">
-			<!--<div class="welcome-photo">
-				<a class="welcome-photo1"><img id="me1" src="./sub_img/crm6.png" border="0" width="90%" title="name"></a>
-			</div>
-			<br>--->
+  <style>
+    :root {
+      --primary: #1c86ee;
+      --danger: #ce0000;
+      --text: #222;
+      --subtext: #555;
+      --bg-light: whitesmoke;
+      --max-width: 1100px;
+      --shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
 
-			<!--<div class="col-md-12">--->
-					<div class="thumbnail-people">
-						<a href="#">
-							<img src="./sub_img/2026.png" class="people-photo">
-						</a>
-					</div>
-			<!--</div>
-			<a href="PDF/CV.pdf"><font color="#1C86EE">[CV]</font></a>--->
-			
-              <div style="text-align: justify;display: block;margin-right: auto;margin-top: 50px;">	
-		    
-  <!--<p><strong>Chuancang Ding (<font face="STXinwei">丛润民</font>)</strong>, a Professor with the School of Control Science and Engineering, Shandong University (SDU), Jinan, China. 
-	  Dr. Cong is the director of <a href="https://rmcong.github.io/MVPLab.html"  target="_blank"><font color="#1C86EE"><strong>Multimedia and Vision Processing Group (MVP Group)</strong></font></a>, which is affiliated to the Key Laboratory of Machine Intelligence & System Control，Ministry of Education. 
-	  He received the Ph.D. degree in information and communication engineering from Tianjin University, Tianjin, China, in June 2019. 
-	  Before joining SDU, he was an Associate Professor with the Institute of Information Science, Beijing Jiaotong University (BJTU), Beijing, China.
-	  He was a Research Student/Staff with Nanyang Technological University (NTU), Singapore, and the City University of Hong Kong (CityU), Hong Kong SAR.
-	  His current research interests include <ud2>computer vision, multimedia information processing and content understanding,
-	  visual saliency detection and segmentation, remote sensing image interpretation, artificial intelligence, and deep learning.</ud2> 
-	  He serves as an Associate Editor/Editorial Board Member of the IEEE Transactions on Neural Networks and Learning Systems, the Neurocomputing, the IEEE Journal of Oceanic Engineering, the Signal, Image and Video Processing. 
-	  Dr. Cong was a recipient of the <strong>Young Elite Scientist Sponsorship Program by the China Association for Science and Technology (中国科协青年人才托举工程)</strong>,
-	  <strong>The World’s Top 2% Scientists (2021-2023)</strong>, <strong>IEEE Chester W. Sall Memorial Award</strong>, <strong>Taishan Scholar Project of Shandong Province（山东省泰山学者青年专家）</strong>、<strong>Beijing Nova Program (北京市科技新星计划)</strong>, <strong>Qilu Young Scholar of Shandong University (山东大学齐鲁青年学者)</strong>,
-	  <strong>IEEE ICME'18 Best Student Paper Award Runner-Up</strong>, <strong>ACM SIGWEB China Rising Star Award</strong>, <strong>First Prize for Scientific and Technological Progress Award of Tianjin Municipality</strong>,
-	  <strong>Excellent Doctorial Dissertation Award from CSIG and BSIG</strong>, and <strong>Excellent Scientific Paper Award for Beijing Youth</strong>. <a href="./Profile-chinese.html"><font color="#1C86EE">[Chinese Version]</font></a>
-  <br> 
- <br>--->
-    <p>Chuancang Ding, a Professor with the School of Control Science and Engineering, Shandong University (SDU), Jinan, China. 
-	  Dr. Cong is the director of <a href="https://rmcong.github.io/MVPLab.html"  target="_blank"><font color="#1C86EE"><strong>Multimedia and Vision Processing Group (MVP Group)</strong></font></a>, which is affiliated to the Key Laboratory of Machine Intelligence & System Control，Ministry of Education. 
-	  His current research interests include <ud2>Artificial Intelligence, Pattern Recognition, Machine Learning, Low-altitude Intelligence, and Embodied Perception.</ud2> 
-		He has published more than 120 IEEE/ACM Trans/CCF-A papers, and has received more than 20 awards, including the IEEE SPS Best Paper Award and IEEE Chester W. Sall Award.
-	    <br> 
- <br>
-				  
-	<p>丛润民，山东大学控制科学与工程学院教授、博士生导师、<strong>国家高层次青年人才计划入选者</strong>，主要研究方向包括人工智能、模式识别、机器学习、低空智能、具身感知等。在TPAMI、IJCV、CVPR、NeurIPS等CCF-A、IEEE/ACM Trans上发表论文130余篇，谷歌学术引用1.8万次，
-		获天津市科学技术进步一等奖、中国煤炭学会科学技术奖（科技创新）特等奖、中国图象图形学学会自然科学奖二等奖、山东计算机学会自然科学奖一等奖、科睿唯安全球高被引科学家、IEEE SPS Best Paper Award（IEEE TIP期刊最佳论文奖）、IEEE Chester W. Sall Memorial Award（IEEE TCE期刊最佳论文奖）等。
-  <br> 
- <br>
-		
-	  
-<strong><font color="#CE0000">Open Positions: </font></strong> <br>
-	  
-I am looking for self-motivated candidates who have solid mathematical backgrounds, strong English ability, and strong coding skills, including senior undergraduate and postgraduate.
-	  If you are interested in doing research on Computer Vision and Machine Learning, please drop me an e-mail (rmcong@sdu.edu.cn) with your detailed CV.
-<br>
+    * {
+      box-sizing: border-box;
+    }
 
-招收山东大学2026级博士生1-2名（已招满），硕士研究生1-2名（已招满），欢迎电邮咨询 (rmcong@sdu.edu.cn).
-<br>
-招收博士后1-2名，薪资在26万/年~46万/年，具体详见<a href="https://mp.weixin.qq.com/s/UHd4lwadzEkvOlCZpS94Ng"  target="_blank"><font color="#1C86EE">招聘公告</font></a>，欢迎电邮咨询 (rmcong@sdu.edu.cn).
-<br>
-<br> 	  
-<!---<strong><font color="#CE0000">Call for Papers: </font></strong> </strong><a href="https://ieee-cybermatics.org/2023/icpads/Special%20Session-Underwater.pdf"><font color="#000000">Special Issue "High-performance Computing for Complex Underwater Visual Perception" </font></a> 
-		      The 29th IEEE International Conference on Parallel and Distributed Systems (ICPDA) [CCF-C Conference], Submission Deadline: 22 September 2023. 
-<br>--->
-	  
-<strong><font color="#CE0000">Important Notice: </font></strong> <br>  
-<!---<li><strong><font color="#CE0000">欢迎访问科技创新2030—“新一代人工智能”重大项目“连续学习理论和方法”网站！</font></strong><a href="https://cl-bjtu.github.io/"  target="_blank"><font color="#FF5151">[链接]</font></a></li>--->
-<img src="./sub_img/news2.gif" ,="" width="7%" style=" background: none; vertical-align: text-bottom; border-radius: 0; padding: 0; ">&nbsp;<strong><font color="#CE0000">山东大学</font><a href="https://rmcong.github.io/AI_COURSE.html"  target="_blank"><font color="#1C86EE">人工智能课程枢纽</font></a></strong><strong><font color="#CE0000"> 正式上线，内容包括通识课程资源（本科32学时版、研究生16学时版）和专业课程资源（本科64学时版），欢迎关注！</font></strong> 
-<br>
+    body {
+      margin: 0;
+      color: var(--text);
+      font-family: "Palatino Linotype", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      line-height: 1.75;
+      background: #fff;
+    }
 
-<img src="./sub_img/news2.gif" ,="" width="7%" style=" background: none; vertical-align: text-bottom; border-radius: 0; padding: 0; ">&nbsp;<strong><font color="#CE0000">欢迎大家关注“MVP Lab成果分享”系列视频</font><a href="https://space.bilibili.com/1562372262/channel/seriesdetail?sid=2768065"  target="_blank"><font color="#1C86EE">[点击访问B站视频合集]</font></a></strong>
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
 
+    a:hover {
+      text-decoration: underline;
+    }
 
-<!---
-<strong><font color="#CE0000">《人工智能通识》慕课正式上线智慧树平台，欢迎使用！</font></strong><a href="https://coursehome.zhihuishu.com/courseHome/1000130304#teachTeam"  target="_blank"><font color="#1C86EE">[链接]</font></a>	
-<br>
-<strong><font color="#CE0000">《深度学习》专业课视频</font><a href="https://rmcong.github.io/proj_deep_learning_ProfessionalCourse.html"  target="_blank"><font color="#1C86EE">[点击访问课程平台(含课件、视频)]</font></a></strong>  
-<br>
-<strong><font color="#CE0000">通知：2022年北京交通大学《深度学习》专业课开课啦！本年度课程受教育部产学合作协同育人项目资助。</font></strong>  <a href="https://rmcong.github.io/proj_deep_learning_ProfessionalCourse.html"  target="_blank"><font color="#1C86EE">[点击访问课程平台(含课件、视频)]</font></a>
-<br>
-<strong><font color="#CE0000">Call for Papers: </font></strong> </strong><a href="https://ieeeoes.org/wp-content/uploads/2021/07/JOE_cfp_AMLM.pdf"><font color="#000000">Special Issue on Advanced Machine Learning Methodologies for Underwater Image and Video Processing and Analysis</font></a>,
-				IEEE Journal of Oceanic Engineering (JOE, IF: 3.554), Submission Deadline: 30 November, 2021. <a href="https://ieeeoes.org/wp-content/uploads/2021/07/JOE_cfp_AMLM.pdf"  target="_blank"><font color="#FF5151">[Link]</font></a>
+    .container-custom,
+    .wrap {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 16px;
+    }
 
-<strong><font color="#CE0000">Call for Papers: </font></strong> </strong><a href="https://2021.ieeeicme.org/conf_sessions"><u><font color="#000000">Special Session on Recent Advance in Depth-Related Processing and Applications</font></u></a>,
-				ICME 2021 (Shenzhen), Submission Deadline: 29 November, 2020.  <a href="PDF/ICME 2021-CFP.pdf"><font color="#1C86EE">[CFP]</font></a>
+    .header {
+      border-bottom: 1px solid #eee;
+      background: #fff;
+    }
 
-<strong><font color="#CE0000">Call for Papers: </font></strong> </strong><a href="https://www.springer.com/journal/11042/updates/17918156"><u><font color="#000000">Special Issue on Depth-Related Processing and Applications in Visual Systems</font></u></a>,
-				Multimedia Tools and Applications (MTAP, IF: 2.101), Submission Deadline: <del>01 November, 2020</del> 31 March, 2021.  <a href="PDF/MTAP_SI_CFP.pdf"><font color="#1C86EE">[CFP]</font></a>--->
-	
-			</div>
-			
+    .header .wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 18px 16px;
+    }
 
+    .logo a {
+      font-size: 28px;
+      font-weight: 700;
+      color: #111;
+    }
 
-			<div class="grid3" id="experience" >
-			<div class="grid3-header" style="align:left;width:65%" >
-				<h3 align='left'>Recent News</h3>
-			</div>
-			
-			
-			<div class="grid3-content"  style="align:left;width:91%">
-				<div class="grid3-content">
-	<ul class="graid3-ul" style="list-style-type:disc; height: 400px;overflow-y: auto;">
-			<div style="text-align: justify; display: block; margin-right: auto;">	
-<li><img src="./sub_img/news2.gif" ,="" width="7%" style=" background: none; vertical-align: text-bottom; border-radius: 0; padding: 0; ">&nbsp;2026/04 -- One paper has been accepted by <strong>International Journal of Computer Vision</strong> (CCF A, JCR Q1).</li>
-<li><img src="./sub_img/news2.gif" ,="" width="7%" style=" background: none; vertical-align: text-bottom; border-radius: 0; padding: 0; ">&nbsp;2026/04 -- One paper has been accepted by <strong>IEEE Trans. Circuits and Systems for Video Technology</strong> (JCR Q1).</li>
-<li><img src="./sub_img/news2.gif" ,="" width="7%" style=" background: none; vertical-align: text-bottom; border-radius: 0; padding: 0; ">&nbsp;2026/04 -- One paper has been accepted by <strong>IEEE Trans. Image Processing</strong> (CCF A, JCR Q1).</li>
-<li><img src="./sub_img/news2.gif" ,="" width="7%" style=" background: none; vertical-align: text-bottom; border-radius: 0; padding: 0; ">&nbsp;2026/03 -- One paper has been accepted by <strong>IEEE Trans. Image Processing</strong> (CCF A, JCR Q1).</li>
-<li><img src="./sub_img/news2.gif" ,="" width="7%" style=" background: none; vertical-align: text-bottom; border-radius: 0; padding: 0; ">&nbsp;2026/03 -- One paper has been accepted by <strong>IEEE Trans. Circuits and Systems for Video Technology</strong> (JCR Q1).</li>
-<li>2026/02 -- Two papers have been accepted by <strong>IEEE Trans. Image Processing</strong> (CCF A, JCR Q1).</li>
-<li>2026/02 -- Two papers have been accepted by <strong>CVPR 2026</strong> (CCF A).</li>
-<li>2026/02 -- One paper has been accepted by <strong>IEEE Trans. Multimedia</strong> (JCR Q1).</li>
-<li>2026/01 -- I was appointed as the <strong>Associate Editor</strong> of the <strong>Pattern Recognition</strong> (JCR Q1, IF：7.6).</li>
-<li>2026/01 -- One paper has been accepted by <strong>IEEE Trans. Circuits and Systems for Video Technology</strong> (JCR Q1).</li>
-<li>2025/12 -- One paper has been accepted by <strong>IEEE Trans. Pattern Analysis and Machine Intelligence</strong> (JCR Q1, CCF A).</li>
-<li>2025/11 -- I am honored to be recognised as <strong>Highly Cited Researchers</strong> by Clarivate.</li>
-<li>2025/11 -- One paper has been accepted by <strong>IEEE Trans. Pattern Analysis and Machine Intelligence</strong> (JCR Q1, CCF A).</li>
-<li>2025/11 -- Three papers have been accepted by <strong>AAAI 2026</strong> with two Orals (CCF A).</li>
-<li>2025/10 -- One paper has been accepted by <strong>IEEE Trans. Geoscience and Remote Sensing</strong> (JCR Q1).</li>
-<li>2025/07 -- Four papers have been accepted by <strong>ACM MM 2025</strong> (CCF A).</li>
-<li>2025/05 -- One paper has been accepted by <strong>IEEE Trans. Image Processing</strong> (CCF A, JCR Q1).</li>
-<li>2025/05 -- One paper has been accepted by <strong>ICML 2025</strong> (CCF A).</li>
-<li>2025/04 -- One paper has been accepted by <strong>IEEE Trans. Multimedia</strong> (JCR Q1).</li>
-<li>2025/03 -- One paper has been accepted by <strong>IEEE Trans. Circuits and Systems for Video Technology</strong> (JCR Q1).</li>
-<li>2025/02 -- One paper has been accepted by <strong>IEEE Trans. Pattern Analysis and Machine Intelligence</strong> (JCR Q1).</li>
-<li>2025/02 -- One paper has been accepted by <strong>CVPR 2025</strong>.</li>
-<li>2025/02 -- I am honored to be recognised as one of the <strong>Top 0.05% Highly Ranked Scholars</strong> by ScholarGPS.</li>
-<li>2025/01 -- One paper has been newly selected as <strong>ESI Highly Cited Paper</strong> (<strong>Top 1%</strong> of papers in the academic field).</li>
-<li>2025/01 -- One paper has been accepted by <strong>IEEE Trans. Image Processing</strong> (JCR Q1).</li>
-<li>2025/01 -- One paper has been accepted by <strong>ICLR 2025</strong>.</li>
-<li>2025/01 -- One paper has been accepted by <strong>IEEE Trans. Circuits and Systems for Video Technology</strong> (JCR Q1).</li>
-<!---<li>2024/12 -- One paper has been accepted by <strong>IEEE Trans. Multimedia</strong> (JCR Q1).</li>
-<li>2024/09 -- One paper has been newly selected as <strong>ESI Highly Cited Paper</strong> (<strong>Top 1%</strong> of papers in the academic field).</li>
-<li>2024/09 -- One paper has been accepted by <strong>IEEE Trans. Image Processing</strong> (CCF A, JCR Q1).</li>
-<li>2024/08 -- Our team won the championship of <strong>LSVOS Challenge-RVOS Track@ECCV 2024</strong>.</li>
-<li>2024/07 -- One paper has been accepted by <strong>ECCV 2024</strong>.</li>
-<li>2024/04 -- One paper has been accepted by <strong>International Journal of Computer Vision</strong> (JCR Q1、CCF A).</li>
-<li>2024/04 -- One paper has been accepted by <strong>IEEE Trans. Geoscience and Remote Sensing</strong> (JCR Q1).</li>
-<li>2024/03 -- One paper has been accepted by <strong>IEEE Trans. Instrumentation & Measurement</strong> (JCR Q1).</li>
-<li>2024/01 -- Two papers have been newly selected as <strong>ESI Highly Cited Paper</strong> (<strong>Top 1%</strong> of papers in the academic field).</li>
-<li>2024/01 -- Two papers have been accepted by <strong>IEEE Trans. Multimedia</strong> (JCR Q1).</li>
-<li>2023/12 -- I was appointed as the <strong>Associate Editor</strong> of the <strong>IEEE Transactions on Neural Networks and Learning Systems (TNNLS)</strong> (JCR Q1, IF：14.255).</li>
-<li>2023/12 -- One paper has been accepted by <strong>IEEE Trans. Geoscience and Remote Sensing</strong> (JCR Q1).</li>
-<li>2023/12 -- One paper has been accepted by <strong>IEEE Trans. Circuits and Systems for Video Technology</strong> (JCR Q1).</li>
-<li>2023/12 -- Our IEEE TCE paper is honored with the second place in the <strong>IEEE Chester W. Sall Memorial Award</strong> 2024.</li>
-<li>2023/11 -- One paper has been newly selected as <strong>ESI Highly Cited Paper</strong> (<strong>Top 1%</strong> of papers in the academic field).</li>
-<li>2023/10 -- One paper has been accepted by <strong>IEEE Trans. Cybernetics</strong> (JCR Q1).</li>
-<li>2023/10 -- One paper has been accepted by <strong>IEEE Trans. Multimedia</strong> (JCR Q1).</li>
-<li>2023/10 -- One paper has been accepted by <strong>IEEE Trans. Instrumentation & Measurement</strong> (JCR Q1).</li>x
-<li>2023/10 -- I am honored to be recognised as <strong>The World’s Top 2% Scientists</strong> (three consecutive years).</li>
-<li>2023/10 -- One paper has been accepted by <strong>IEEE Trans. Circuits and Systems for Video Technology</strong> (JCR Q1).</li><li><img src="./sub_img/news2.gif" ,="" width="7%" style=" background: none; vertical-align: text-bottom; border-radius: 0; padding: 0; ">&nbsp;2023/09 -- One paper has been accepted by <strong>NeurIPS 2023</strong> (CCF A Top Conference).</li>
-<li>2023/09 -- Two patents have been authorized by China National Intellectual Property Administration.</li>
-<li>2023/08 -- One paper has been accepted by <strong>IEEE Trans. Circuits and Systems for Video Technology</strong> (JCR Q1).</li>
-<li>2023/07 -- Three papers have been accepted by <strong>ACM MM 2023</strong> (CCF A).</li>
-<li>2023/07 -- One paper has been accepted by <strong>IEEE ICCV 2023</strong> (CCF A).</li>
-<li>2023/06 -- I am honored to be elevated to the grade of <strong>Senior Member</strong> of Chinese Institute of Electronics (CIE).</li>
-<li>2023/05 -- One paper has been accepted by <strong>IEEE Trans. Image Processing</strong> (CCF A, JCR Q1).</li>
-<li>2023/05 -- One paper has been newly selected as <strong>ESI Highly Cited Paper</strong> (<strong>Top 1%</strong> of papers in the academic field).</li>
-<li>2023/05 -- One paper has been accepted by <strong>IEEE Trans. Image Processing</strong> (CCF A, JCR Q1).</li>
-<li>2023/05 -- One paper is newly recognized as <strong><a href="https://ieeexplore.ieee.org/xpl/topAccessedArticles.jsp?punumber=19&topArticlesDate=April%202023"><font color="#1C86EE">Popular Documents (the 50 most frequently accessed documents)</font></a></strong> in IEEE Transactions on Instrumentation and Measurement.</li>
-<li>2023/04 -- One paper is newly recognized as <strong><a href="https://ieeexplore.ieee.org/xpl/topAccessedArticles.jsp?punumber=7433297&topArticlesDate=March%202023"><font color="#1C86EE">Popular Documents (the 50 most frequently accessed documents)</font></a></strong> in IEEE Transactions on Emerging Topics in Computational Intelligence.</li>
-<li>2023/03 -- One paper has been accepted by <strong>IEEE Trans. Multimedia</strong> (JCR Q1).</li>
-<li>2023/03 -- One paper is newly recognized as <strong><a href="https://ieeexplore.ieee.org/xpl/topAccessedArticles.jsp?punumber=76"><font color="#1C86EE">Popular Documents (the 50 most frequently accessed documents)</font></a></strong> in IEEE Transactions on Circuits and Systems for Video Technology.</li>
-<li>2023/02 -- I am honored to be elevated to the grade of <strong>IEEE Senior Member</strong>.</li>
-<li>2023/02 -- One paper has been accepted by <strong>IEEE CVPR 2023</strong> (CCF A).</li>
-<li>2023/02 -- One paper is newly recognized as <strong><a href="https://ieeexplore.ieee.org/xpl/topAccessedArticles.jsp?punumber=6221036"><font color="#1C86EE">Popular Documents (the 50 most frequently accessed documents)</font></a></strong> in IEEE Transactions on Cybernetics.</li>
-<li>2023/01 -- One paper has been accepted by <strong>IEEE Trans. Instrumentation and Measurement</strong> (JCR Q1). </li>
-<li>2022/12 -- One paper have been accepted by <strong>IEEE Trans. Neural Networks and Learning Systems</strong> (JCR Q1).</li>
-<li>2022/11 -- Two papers have been newly selected as <strong>ESI Highly Cited Paper</strong> (<strong>Top 1%</strong> of papers in the academic field).</li>
-<li>2022/11 -- The source code of <a href="https://github.com/rmcong/CIRNet_TIP2022"  target="_blank"><font color="#1C86EE">[CIR-Net]</font></a> (TIP 2022), <a href="https://github.com/rmcong/TNet_TMM2022"  target="_blank"><font color="#1C86EE">[TNet]</font></a> (TMM 2022) and <a href="https://github.com/rmcong/Hybrid-Label-SOD_TCSVT2022"  target="_blank"><font color="#1C86EE">[HybridSOD]</font></a> (TCSVT 2022), the results of <a href="https://github.com/rmcong/PSNet_TETCI2022"  target="_blank"><font color="#1C86EE">[PSNet]</font></a> (TCTCI 2022) have been released.</li>
-<li>2022/11 -- One paper has been accepted by <strong>ACM Trans. Multimedia Computing Communications and Applications</strong>.</li>
-<li>2022/11 -- One paper is newly recognized as <strong><a href="https://ieeexplore.ieee.org/xpl/topAccessedArticles.jsp?punumber=6046"><font color="#1C86EE">Popular Documents (the 50 most frequently accessed documents)</font></a></strong> in IEEE Transactions on Multimedia.</li>
-<li>2022/11 -- One paper is newly recognized as <strong><a href="https://ieeexplore.ieee.org/xpl/topAccessedArticles.jsp?punumber=30"><font color="#1C86EE">Popular Documents (the 50 most frequently accessed documents)</font></a></strong> in IEEE Transactions on Consumer Electronics.</li>
-<li>2022/10 -- I am honored to be recognised as the <strong>2021 World’s Top 2% Scientists</strong>.</li>
-<li>2022/10 -- One paper have been accepted by <strong>IEEE Trans. Image Processing</strong> (CCF A, JCR Q1).</li>
-<li>2022/10 -- I was appointed as the <strong>Associate Editor</strong> of the <strong>Engineering Applications of Artificial Intelligence</strong> (SCI, JCR Q1, IF: 7.802).
-<li>2022/10 -- Two papers have been accepted by <strong>IEEE Trans. Multimedia</strong> (JCR Q1).</li>
-<li>2022/10 -- One paper has been accepted by <strong>IEEE Trans. Emerging Topics in Computational Intelligence</strong> (JCR Q2).</li>
-<li>2022/10 -- One paper is newly recognized as <strong><a href="https://ieeexplore.ieee.org/xpl/topAccessedArticles.jsp?punumber=97"><font color="#1C86EE">Popular Documents (the 50 most frequently accessed documents)</font></a></strong> in IEEE Signal Processing Letters.</li>
-<li>2022/09 -- I was appointed as the <strong>Youth Editorial Board Member</strong> of the <strong>CAAI Transactions on Intelligence Technology</strong> (SCI, JCR Q1, IF: 7.985).
-<li>2022/09 -- One paper has been accepted by <strong>IEEE Trans. Consumer Electronics</strong> (JCR Q2). </li>
-<li>2022/09 -- One paper is newly recognized as <strong><a href="https://ieeexplore.ieee.org/xpl/topAccessedArticles.jsp?punumber=6745852"><font color="#1C86EE">Popular Documents (the 50 most frequently accessed documents)</font></a></strong> in IEEE Trans. Computational Imaging.</li>
-<li>2022/08 -- One paper has been accepted by <strong>IEEE Trans. Circuits and Systems for Video Technology</strong> (JCR Q1). </li>
-<li>2022/08 -- One paper has been accepted by <strong>SCIENCE CHINA Information Sciences</strong> (JCR Q1). </li>
-<li>2022/07 -- I was invited as the a <strong>Senior Program Committee (SPC) Member</strong> for the 37th AAAI Conference on Artificial Intelligence (AAAI-23).</li>
-<li>2022/07 -- One paper has been accepted by <strong>IEEE Trans. Instrumentation and Measurement</strong> (JCR Q1). </li>
-<li>2022/07 -- One paper has been accepted by <strong>IEEE Trans. Computational Imaging</strong> (JCR Q1). </li>
-<li>2022/05 -- I was appointed as the <strong>Associate Editor</strong> of the <strong>IEEE Journal of Oceanic Engineering</strong> (SCI, JCR Q1, Impact Factor: 3.554).</li>
-<li>2022/05 -- One paper has been newly selected as <strong>ESI Hot Paper</strong> (<strong>Top 0.1%</strong> of papers in the academic field).</li>
-<li>2022/05 -- One paper has been accepted by <strong>IEEE Journal of Biomedical and Health Informatics</strong>  (JCR Q1).</li>
-<li>2022/05 -- One paper is newly recognized as <strong><a href="https://ieeexplore.ieee.org/xpl/topAccessedArticles.jsp?punumber=76"><font color="#1C86EE">Popular Documents (the 50 most frequently accessed documents)</font></a></strong> in IEEE Trans. Circuits and Systems for Video Technology.</li>
-<li>2022/04 -- One paper has been accepted by <strong>IEEE Trans. Cybernetics</strong>  (JCR Q1).</li>
-<li>2022/04 -- 录用CCF A类中文期刊<strong>《软件学报》</strong>论文1篇.</li>
-<li>2022/04 -- I am promoted to <strong>Senior Member</strong> of CCF.</li>
-<li>2022/04 -- One paper is newly recognized as <strong><a href="https://ieeexplore.ieee.org/xpl/topAccessedArticles.jsp?punumber=76"><font color="#1C86EE">Popular Documents (the 50 most frequently accessed documents)</font></a></strong> in IEEE Tran. Circuits and Systems for Video Technology.</li>
-<li>2022/04 -- One paper has been accepted by <strong>ACM Trans. Multimedia Computing Communications and Applications</strong>.</li>
-<li>2022/03 -- One paper has been accepted by <strong>IEEE Trans. Cybernetics</strong> (JCR Q1).</li>
-<li>2022/03 -- One paper has been accepted by <strong>IEEE Trans. Intelligent Transportation Systems</strong> (JCR Q1).</li>
-<li>2022/03 -- One paper has been accepted by <strong>IEEE Trans. Circuits and Systems for Video Technology</strong> (JCR Q1).</li>
-<li>2022/03 -- Two papers have been newly selected as <strong>ESI Highly Cited Paper</strong> (<strong>Top 1%</strong> of papers in the academic field).</li>
-<li>2022/03 -- One paper is newly recognized as <strong><a href="https://ieeexplore.ieee.org/xpl/topAccessedArticles.jsp?punumber=83"><font color="#1C86EE">Popular Documents (the 50 most frequently accessed documents)</font></a></strong> in IEEE Transactions on Image Processing.</li>
-<li>2022/03 -- One paper has been accepted by <strong>CVPR 2022</strong> (CCF A).</li>
-<li>2022/02 -- One paper has been accepted by <strong>IEEE Trans. Multimedia</strong> (JCR Q1).</li>
-<li>2022/02 -- I was recognized as <strong>2021 Outstanding Reviewer</strong> of <strong>IEEE Journal of Oceanic Engineering</strong>.</li>
-<li>2022/01 -- I was appointed as the <strong>Associate Editor</strong> of the <strong>Neurocomputing</strong> (SCI, JCR Q1, Impact Factor: 5.719).</li>
-<li>2022/01 -- I was invited as the <strong>Area Chair</strong> of the <strong>ICPR 2022</strong>.</li>
-<li>2022/01 -- One paper has been newly selected as <strong>ESI Hot Paper</strong> (<strong>Top 0.1%</strong> of papers in the academic field).</li>
-<li>2022/01 -- I am honored to be recognised as the <strong>2020 World’s Top 2% Scientists</strong>.</li>
-<li>2022/01 -- One paper is recognized as <strong><a href="https://ieeexplore.ieee.org/xpl/topAccessedArticles.jsp?punumber=6221036"><font color="#1C86EE">Popular Documents (the 50 most frequently accessed documents)</font></a></strong> in IEEE Transactions on Cybernetics.</li>
-<li>2022/01 -- Two papers are recognized as <strong><a href="https://ieeexplore.ieee.org/xpl/topAccessedArticles.jsp?punumber=83"><font color="#1C86EE">Popular Documents (the 50 most frequently accessed documents)</font></a></strong> in IEEE Transactions on Image Processing.</li>				
-<li>2021/12 -- One Beijing Municipal Natural Science Foundation project was approved. </li>
-<li>2021/12 -- I was invited to join the editorial board of International Journal of Interactive Multimedia and Artificial Intelligence (IJIMAI, JCR Q2, Impact Factor: 3.137). </li>
-<li>2021/11 -- One paper has been newly selected as <strong>ESI Highly Cited Paper</strong> (<strong>Top 1%</strong> of papers in the academic field).</li>
-<li>2021/11 -- I am promoted to <strong>Senior Member</strong> of CSIG.</li>
-<li>2021/10 -- One paper has been accepted by <strong>IEEE Trans. Geoscience and Remote Sensing</strong> (JCR Q1).</li>
-<li>2021/10 -- Two papers have been accepted by <strong>IEEE Trans. Image Processing</strong> (CCF A, JCR Q1).</li>
-<li>2021/10 -- I was named the recipient of the <strong>2021 China Rising Star Award</strong> by the ACM Special Interest Group on Hypertext, Hypermedia and Web (SIGWEB).</li>	
-<li>2021/10 -- My supervised second-year graduate student Mr. Chen Zhang (张晨) won the <strong>National Scholarship</strong>. Congratulations!</li>	
-<li>2021/10 -- I was selected for the <strong>Young Elite Scientist Sponsorship Program by the China Association for Science and Technology (中国科协青年人才托举工程)</strong>.</li>				
-<li>2021/08 -- I was selected for the <strong>Youth Talent Development Program</strong> of Beijing Jiaotong University. </li>
-<li>2021/07 -- Three papers have been accepted by <strong>ACM MM 2021</strong> (CCF A Top Conference).</li>
-<li>2021/07 -- I was elected as a <strong>Vice Secretary-General</strong> of CSIG Working Committee for Elite Young Professionals. </li>
-<li>2021/07 -- The "Deep Learning" (Ability Platform Course) website was launched online. <a href="https://rmcong.github.io/proj_deep_learning_AbilityCourse.html"  target="_blank"><font color="#FF5151">[Link]</font></a></li>				
-<li>2021/07 -- One paper has been accepted by <strong>IEEE Signal Processing Letters</strong>. </li>
-<li>2021/07 -- One paper has been accepted by <strong>PRCV 2021</strong>. </li>
-<li>2021/06 -- I was elected as a <strong>council member</strong> of the Beijing Society of Image and Graphics (BSIG). </li>
-<li>2021/05 -- Two papers have been newly selected as <strong>ESI Highly Cited Paper</strong>.</li>
-<li>2021/05 -- I was selected as <strong>IEEE CVPR 2021 Outstanding Reviewer</strong>.</li>
-<li>2021/05 -- One paper has been accepted by <strong>IEEE Trans. Multimedia</strong> (JCR Q1).</li>
-<li>2021/05 -- I was selected as the <strong>Executive Area Chair (EAC)</strong> of the VALSE. </li>
-<li>2021/04 -- One paper has been accepted by <strong>IEEE Trans. Image Processing</strong> (CCF A, JCR Q1).</li>
-<li>2021/03 -- One paper has been accepted by <strong>IEEE CVPR 2021</strong> (CCF A Top Conference).</li>
-<li>2021/03 -- Four papers have been selected as <strong>ESI Highly Cited Paper</strong>.</li>
-<li>2021/03 -- One paper has been accepted by <strong>Signal Processing: Image Communication</strong> (JCR Q2).</li>
-<li>2021/01 -- The results of our CoADNet (NeurIPS'20) have been released. <a href="https://rmcong.github.io/proj_CoADNet.html"  target="_blank"><font color="#FF5151">[----Project Page----]</font></a></li>
-<li>2021/01 -- The code and result of our DAFNet (TIP'21) have been released. <a href="https://rmcong.github.io/proj_DAFNet.html"  target="_blank"><font color="#FF5151">[----Project Page----]</font></a></li>
-<li>2020/12 -- One paper has been accepted by <strong>IEEE Trans. Industrial Informatics</strong> (JCR Q1).</li>
-<li>2020/12 -- One paper has been accepted by <strong>Information Sciences</strong> (JCR Q1).</li>
-<li>2020/11 -- One paper has been accepted by <strong>IEEE Trans. Image Processing</strong> (CCF A, JCR Q1).</li>
-<li>2020/10 -- I was selected for the <strong>Young Elite Scientist Sponsorship Program by the Beijing Association for Science and Technology (北京市科协青年人才托举工程)</strong>.</li>
-<li>2020/09 -- One paper has been accepted by <strong>NeurIPS 2020</strong> (CCF A Top Conference).</li>				
-<li>2020/09 -- One paper has been accepted by <strong>IEEE Trans. Image Processing</strong> (CCF A, JCR Q1).</li>
-<li>2020/07 -- I was selected for the <strong>Beijing Nova Program (北京市科技新星计划)</strong>.</li>
-<li>2020/07 -- Two papers have been accepted by <strong>ACM MM 2020</strong> (CCF A Top Conference).</li>
-<li>2020/07 -- One paper has been accepted by <strong>IEEE Trans. Image Processing</strong> (CCF A, JCR Q1).</li>
-<li>2020/07 -- One paper has been accepted by <strong>ECCV 2020</strong>.</li>
-<li>2020/05 -- I was appointed as the <strong>Associate Editor</strong> of the <strong>Signal, Image and Video Processing</strong> (SCI, JCR Q2).</li>
-<li>2020/05 -- One paper has been accepted by <strong>Neurocomputing</strong> (JCR Q1).</li>
-<li>2020/04 -- One paper has been accepted by <strong>IJCAI 2020</strong> (CCF A Top Conference).</li>
-<li>2020/02 -- One paper has been accepted by <strong>IEEE CVPR 2020</strong> (CCF A Top Conference).</li>
-<li>2020/01 -- One paper has been accepted by <strong>IEEE Trans. Cybernetics</strong> (JCR Q1).</li>-->
-				
+    .top-nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
 
-					</ul>
-				</div>
-			</div>			
-		</div>			
-        </div> 
-</div>
+    .top-nav li a {
+      color: #333;
+      font-weight: 500;
+    }
 
-<br>
+    .top-nav li.active a {
+      color: var(--primary);
+    }
 
-<!--<div align="center"><a href="http://www.amazingcounters.com"><img border="0" src="http://cc.amazingcounters.com/counter.php?i=3230524&c=9691885" alt="AmazingCounters.com"> </a></div>-->
+    .content {
+      padding: 36px 0 60px;
+    }
 
-  <!--<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=200&t=t&d=LZZ0YTbipXFWZ6lvSaTJt75IoLIi9silsXWRuQDdIwA'></script>-->
-  <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=200&t=tt&d=LZZ0YTbipXFWZ6lvSaTJt75IoLIi9silsXWRuQDdIwA"></script>
+    .section {
+      margin-bottom: 48px;
+    }
 
-	
-		<script type="text/javascript" src="./files/jquery.min.js.下载"></script>
-		<script type="text/javascript" src="./files/bootstrap.js.下载"></script>
-		<script type="text/javascript" src="./files/jquery.banner.js.下载"></script>
-		<script type="text/javascript" src="./files/jquery.prettyPhoto.js.下载"></script>		
-		<script type="text/javascript" src="./files/jquery.isotope.js.下载"></script>	
-		<script type="text/javascript" src="./files/main.js.下载"></script>				
-	
+    .section-title {
+      font-size: 30px;
+      margin-bottom: 20px;
+      border-left: 5px solid var(--primary);
+      padding-left: 12px;
+    }
 
+    .profile-card {
+      text-align: center;
+      margin-bottom: 32px;
+    }
 
-</body></html>
+    .people-photo {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: var(--shadow);
+    }
+
+    .intro {
+      text-align: justify;
+      margin-top: 30px;
+    }
+
+    .highlight {
+      color: #1a237e;
+      font-style: italic;
+      font-weight: 600;
+    }
+
+    .notice-title {
+      color: var(--danger);
+      font-weight: 700;
+    }
+
+    .news-box {
+      background: var(--bg-light);
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    .news-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      max-height: 400px;
+      overflow-y: auto;
+    }
+
+    .news-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 12px;
+      line-height: 1.7;
+    }
+
+    .news-icon {
+      width: 18px;
+      margin-top: 6px;
+      flex-shrink: 0;
+    }
+
+    .text-danger {
+      color: var(--danger);
+    }
+
+    .text-primary {
+      color: var(--primary);
+    }
+
+    .muted {
+      color: var(--subtext);
+    }
+
+    @media (max-width: 768px) {
+      .header .wrap {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .section-title {
+        font-size: 24px;
+      }
+
+      .people-photo {
+        width: 180px;
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="wrap">
+      <div class="logo">
+        <a href="./index.html">Chuancang Ding</a>
+      </div>
+
+      <nav class="top-nav" aria-label="Main navigation">
+        <ul>
+          <li class="active"><a href="./index.html">Home</a></li>
+          <li><a href="./Profile.html">Profile</a></li>
+          <li><a href="./Publication.html">Publications</a></li>
+          <li><a href="https://rmcong.github.io/AI_COURSE.html" target="_blank" rel="noopener noreferrer">AI COURSE</a></li>
+          <li><a href="./MVPLab.html">MVP Group</a></li>
+          <li><a href="./Profile-chinese.html">中文简介</a></li>
+          <li><a href="./Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="content">
+    <div class="container-custom">
+
+      <section class="section" id="me">
+        <div class="profile-card">
+          <img src="./sub_img/2026.png" class="people-photo" alt="Chuancang Ding">
+        </div>
+
+        <div class="intro">
+          <p>
+            Chuancang Ding, a Professor with the School of Control Science and Engineering, Shandong University (SDU), Jinan, China.
+            Dr. Cong is the director of
+            <a href="https://rmcong.github.io/MVPLab.html" target="_blank" rel="noopener noreferrer"><strong>Multimedia and Vision Processing Group (MVP Group)</strong></a>,
+            which is affiliated to the Key Laboratory of Machine Intelligence &amp; System Control, Ministry of Education.
+            His current research interests include
+            <span class="highlight">Artificial Intelligence, Pattern Recognition, Machine Learning, Low-altitude Intelligence, and Embodied Perception.</span>
+            He has published more than 120 IEEE/ACM Trans/CCF-A papers, and has received more than 20 awards, including the IEEE SPS Best Paper Award and IEEE Chester W. Sall Award.
+          </p>
+
+          <p>
+            丛润民，山东大学控制科学与工程学院教授、博士生导师、<strong>国家高层次青年人才计划入选者</strong>，主要研究方向包括人工智能、模式识别、机器学习、低空智能、具身感知等。
+            在 TPAMI、IJCV、CVPR、NeurIPS 等 CCF-A、IEEE/ACM Trans 上发表论文 130 余篇，谷歌学术引用 1.8 万次，
+            获天津市科学技术进步一等奖、中国煤炭学会科学技术奖（科技创新）特等奖、中国图象图形学学会自然科学奖二等奖、山东计算机学会自然科学奖一等奖、
+            科睿唯安全球高被引科学家、IEEE SPS Best Paper Award、IEEE Chester W. Sall Memorial Award 等。
+          </p>
+
+          <p>
+            <span class="notice-title">Open Positions:</span><br>
+            I am looking for self-motivated candidates who have solid mathematical backgrounds, strong English ability, and strong coding skills, including senior undergraduate and postgraduate.
+            If you are interested in doing research on Computer Vision and Machine Learning, please drop me an e-mail
+            (<a href="mailto:rmcong@sdu.edu.cn">rmcong@sdu.edu.cn</a>) with your detailed CV.
+          </p>
+
+          <p>
+            招收山东大学2026级博士生1-2名（已招满），硕士研究生1-2名（已招满），欢迎电邮咨询
+            (<a href="mailto:rmcong@sdu.edu.cn">rmcong@sdu.edu.cn</a>)。<br>
+            招收博士后1-2名，薪资在26万/年~46万/年，具体详见
+            <a href="https://mp.weixin.qq.com/s/UHd4lwadzEkvOlCZpS94Ng" target="_blank" rel="noopener noreferrer">招聘公告</a>，
+            欢迎电邮咨询 (<a href="mailto:rmcong@sdu.edu.cn">rmcong@sdu.edu.cn</a>)。
+          </p>
+
+          <p>
+            <span class="notice-title">Important Notice:</span><br>
+            <img src="./sub_img/news2.gif" class="news-icon" alt="news">
+            <strong class="text-danger">山东大学</strong>
+            <a href="https://rmcong.github.io/AI_COURSE.html" target="_blank" rel="noopener noreferrer"><strong>人工智能课程枢纽</strong></a>
+            <strong class="text-danger">正式上线，内容包括通识课程资源（本科32学时版、研究生16学时版）和专业课程资源（本科64学时版），欢迎关注！</strong>
+            <br>
+
+            <img src="./sub_img/news2.gif" class="news-icon" alt="news">
+            <strong class="text-danger">欢迎大家关注“MVP Lab成果分享”系列视频</strong>
+            <a href="https://space.bilibili.com/1562372262/channel/seriesdetail?sid=2768065" target="_blank" rel="noopener noreferrer"><strong>[点击访问B站视频合集]</strong></a>
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <h2 class="section-title">Recent News</h2>
+        <div class="news-box">
+          <ul class="news-list">
+            <li class="news-item"><img src="./sub_img/news2.gif" class="news-icon" alt="news"><span>2026/04 -- One paper has been accepted by <strong>International Journal of Computer Vision</strong> (CCF A, JCR Q1).</span></li>
+            <li class="news-item"><img src="./sub_img/news2.gif" class="news-icon" alt="news"><span>2026/04 -- One paper has been accepted by <strong>IEEE Trans. Circuits and Systems for Video Technology</strong> (JCR Q1).</span></li>
+            <li class="news-item"><img src="./sub_img/news2.gif" class="news-icon" alt="news"><span>2026/04 -- One paper has been accepted by <strong>IEEE Trans. Image Processing</strong> (CCF A, JCR Q1).</span></li>
+            <li class="news-item"><img src="./sub_img/news2.gif" class="news-icon" alt="news"><span>2026/03 -- One paper has been accepted by <strong>IEEE Trans. Image Processing</strong> (CCF A, JCR Q1).</span></li>
+            <li class="news-item"><img src="./sub_img/news2.gif" class="news-icon" alt="news"><span>2026/03 -- One paper has been accepted by <strong>IEEE Trans. Circuits and Systems for Video Technology</strong> (JCR Q1).</span></li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <script>
+    document.querySelectorAll('.top-nav li').forEach(item => {
+      item.addEventListener('click', () => {
+        document.querySelector('.top-nav li.active')?.classList.remove('active');
+        item.classList.add('active');
+      });
+    });
+
+    function comingSoon() {
+      alert('Coming soon.');
+    }
+  </script>
+
+  <script src="./files/jquery.min.js.下载"></script>
+  <script src="./files/bootstrap.js.下载"></script>
+  <script src="./files/jquery.banner.js.下载"></script>
+  <script src="./files/jquery.prettyPhoto.js.下载"></script>
+  <script src="./files/jquery.isotope.js.下载"></script>
+  <script src="./files/main.js.下载"></script>
+</body>
+</html>
