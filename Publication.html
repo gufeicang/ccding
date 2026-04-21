@@ -394,7 +394,7 @@
     <script type="text/javascript" src="./files/main.js.下载" defer></script>
     <script src="./assets/site-common.js" defer></script>
 
-    <script>
+<script>
     document.addEventListener("DOMContentLoaded", function () {
         const yearHeaders = Array.from(document.querySelectorAll("h4"));
 
@@ -413,12 +413,12 @@
             function getSortPriority(li) {
                 const html = li.innerHTML.replace(/\s+/g, " ").trim();
 
-                const hasCorr =
-                    /<strong>\s*Chuancang Ding\s*<sup class="corr-star">\*<\/sup>\s*<\/strong>/i.test(html);
+                // 已更新为你使用的内联样式星号格式
+                const hasCorr = /<strong>\s*Chuancang Ding\s*<sup style="vertical-align:baseline; font-size:0\.7em; top:-0\.5em; position:relative;">\*<\/sup>\s*<\/strong>/i.test(html);
 
                 const beforeFirstComma = html.split(",")[0];
-                const isFirstAuthor =
-                    /<strong>\s*Chuancang Ding(?:\s*<sup class="corr-star">\*<\/sup>)?\s*<\/strong>/i.test(beforeFirstComma);
+                // 匹配第一作者（带/不带星号）
+                const isFirstAuthor = /<strong>\s*Chuancang Ding(?:\s*<sup style="vertical-align:baseline; font-size:0\.7em; top:-0\.5em; position:relative;">\*<\/sup>)?\s*<\/strong>/i.test(beforeFirstComma);
 
                 if (isFirstAuthor && hasCorr) return 0;
                 if (isFirstAuthor) return 1;
@@ -438,6 +438,6 @@
             });
         });
     });
-    </script>
+</script>
 </body>
 </html>
